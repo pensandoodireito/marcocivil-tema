@@ -13,5 +13,8 @@
             "homepage": "http://participacao.mj.gov.br/",
             "role": "Developer"
         }
-    ]
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    }
 }
