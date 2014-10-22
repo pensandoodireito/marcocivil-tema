@@ -72,96 +72,10 @@
                                 Expandir Menu <i class="fa fa-caret-square-o-down ml-xs"></i>
                             </button>
                         </div>
-                        <div class="navbar-collapse collapse">
-                            <!-- início do menu principal de navegação -->
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">SAL</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">A secretaria</a>
-                                        </li>
-                                        <li><a href="#">Projetos de destaque</a>
-                                        </li>
-                                        <li><a href="#">Parcerias</a>
-                                        </li>
-                                        <li><a href="#">PROCESSO LEGISLATIVO</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Dropdown</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li><a href="#">A sub menu</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a>
-                                                </li>
-                                                <li><a href="#">Another action</a>
-                                                </li>
-                                                <li><a href="#">Something else here</a>
-                                                </li>
-                                                <li><a href="#">One more link</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">A separated link</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Dropdown</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li><a href="#">A sub menu</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a>
-                                                </li>
-                                                <li><a href="#">Another action</a>
-                                                </li>
-                                                <li><a href="#">Something else here</a>
-                                                </li>
-                                                <li><a href="#">One more link</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">A separated link</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Dropdown</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li><a href="#">A sub menu</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a>
-                                                </li>
-                                                <li><a href="#">Another action</a>
-                                                </li>
-                                                <li><a href="#">Something else here</a>
-                                                </li>
-                                                <li><a href="#">One more link</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">A separated link</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--/.nav-collapse -->
+                        <!-- início do menu principal de navegação -->
+                        <?php wp_nav_menu( array(   'theme_location' => 'menu-principal',
+                                                    'container_class' => 'navbar-collapse collapse',
+                                                    'menu_class' => 'nav navbar-nav navbar-right sm') ); ?>
                     </div>
                 </div>
             </div>
