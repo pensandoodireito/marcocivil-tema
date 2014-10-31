@@ -23,7 +23,7 @@
     <![endif]-->
 </head>
 
-<body <?php body_class('internalcontent-mci'); ?>>
+<body <?php body_class(); ?>>
 
 <!-- <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px; display:block;" class="clearfix">
     <ul id="menu-barra-temp" style="list-style:none;">
