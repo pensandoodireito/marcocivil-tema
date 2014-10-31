@@ -35,7 +35,7 @@
 </div> -->
 <div class="header container clearfix">
     <div id="logo-principal">
-        <a href="#">
+        <a href="<?php echo get_site_url(); ?>">
             <h1>Portal do Projeto Pensando o Direito</h1>
         </a>
     </div>

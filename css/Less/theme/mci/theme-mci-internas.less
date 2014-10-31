@@ -1,6 +1,4 @@
-body.page,
-body.single,
-body.archive  {
+body.page, body.single, body.archive {
     #content-mci {
         background: url('@{image-path-pd}/home/mci/bck-mci.jpg') no-repeat center center scroll;
         -webkit-background-size: cover;
@@ -52,7 +50,7 @@ body.archive  {
                 @media(max-width: 775px) {
                     float: none;
                 }
-                a{
+                a {
                     font-size: 25px;
                     font-weight: 700;
                     font-family: @font-family-opensans;
@@ -74,12 +72,33 @@ body.archive  {
     .layer-mci {
         width: 80%;
         background-color: #f9f2d0;
-        margin:0 0 60px 15%;
+        margin: 0 0 60px 15%;
         padding: 40px 40px 40px 120px;
         @media(max-width: 775px) {
-            margin:0 0 60px 0;
+            margin: 0 0 60px 0;
             width: 100%;
             padding-left: 40px;
+        }
+    }
+    #lista-de-pautas {
+        border-top: 2px solid #e8ca1c;
+        background-color: #fff;
+        padding: 20px 30px;
+        .topic {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8ca1c;
+        }
+    }
+    /// coments
+    .commentlist {
+        border-top: 2px solid #e8ca1c;
+        background-color: #fff;
+        padding: 20px 30px;
+        li {
+            border-bottom: 2px solid #e8ca1c;
+            background-color: #fff;
+            padding: 20px 30px;
         }
     }
 }
