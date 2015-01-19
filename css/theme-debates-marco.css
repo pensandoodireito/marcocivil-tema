@@ -1,0 +1,58 @@
+#marco-civil .apresenta-protecao {
+  background: url("../images/bck-debates-marco-02.jpg") repeat top left #a58d37;
+  padding: 40px 20px;
+}
+#marco-civil .apresenta-protecao:before,
+#marco-civil .apresenta-protecao:after {
+  content: " ";
+  display: table;
+}
+#marco-civil .apresenta-protecao:after {
+  clear: both;
+}
+#marco-civil .apresenta-protecao .assinatura {
+  margin: 20px -20px -40px -20px;
+  padding: 10px 20px 20px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+#marco-civil .apresenta-protecao .assinatura a,
+#marco-civil .apresenta-protecao .assinatura a:hover {
+  color: #fff;
+}
+#marco-civil .apresenta-protecao .assinatura .realizacao {
+  width: 50%;
+  margin: 10px auto;
+}
+#marco-civil .temas {
+  position: relative;
+  background-color: #faf4d1;
+  padding: 40px 20px;
+}
+#marco-civil .temas .titulo {
+  margin-top: 25%;
+  padding: 30px;
+  border-image-slice: 38 30 35 37;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("../images/teste.jpg");
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  #marco-civil .temas .titulo {
+    margin-top: 20px;
+  }
+}
+#marco-civil .detalhes-marco {
+  background-color: #557a75;
+  padding: 40px;
+}
+#marco-civil .detalhes-marco:before,
+#marco-civil .detalhes-marco:after {
+  content: " ";
+  display: table;
+}
+#marco-civil .detalhes-marco:after {
+  clear: both;
+}
