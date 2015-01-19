@@ -43,66 +43,25 @@
             </div>
         </div>
         <div class="col-sm-8">
+            <?php
+            $temas = get_terms( 'tema', 'hide_empty=0' );
+
+            foreach($temas as $tema): ?>
             <div class="clearfix mt-lg">
                 <div class="col-sm-3 text-center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/marcocivil-tema-01.jpg"
-                         class="img-adptive" alt="">
+                    <a href="<?php echo get_term_link($tema); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/<?php echo $tema->slug; ?>.jpg"
+                         class="img-adptive" alt=""></a>
                 </div>
                 <div class="col-sm-8">
-                    <h4 class="font-amatic blue">Registros de acesso</h4>
+                    <h4 class="font-amatic blue">
+                        <a href="<?php echo get_term_link($tema); ?>"><?php echo $tema->name; ?></a>
+                    </h4>
 
-                    <p>Os provedores de internet e de serviços só serão obrigados a fornecer informações dos usuários se
-                        receberem ordem judicial.</p>
+<!--                    <p>Os provedores de internet e de serviços só serão obrigados a fornecer informações dos usuários se-->
+<!--                        receberem ordem judicial.</p>-->
                 </div>
             </div>
-            <div class="clearfix mt-lg">
-                <div class="col-sm-3 text-center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/marcocivil-tema-02.jpg"
-                         class="img-adptive" alt="">
-                </div>
-                <div class="col-sm-8">
-                    <h4 class="font-amatic blue">Apuração de infrações à Lei</h4>
-
-                    <p>Significa que todas as informações que trafegam na rede devem ser tratadas da mesma forma,
-                        navegando à mesma velocidade, ou seja, na velocidade da contratação.</p>
-                </div>
-            </div>
-            <div class="clearfix mt-lg">
-                <div class="col-sm-3 text-center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/marcocivil-tema-03.jpg"
-                         class="img-adptive" alt="">
-                </div>
-                <div class="col-sm-8">
-                    <h4 class="font-amatic blue">Privacidade na rede</h4>
-
-                    <p>Os provedores de internet e de serviços só serão obrigados a fornecer informações dos usuários se
-                        receberem ordem judicial.</p>
-                </div>
-            </div>
-            <div class="clearfix mt-lg">
-                <div class="col-sm-3 text-center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/marcocivil-tema-04.jpg"
-                         class="img-adptive" alt="">
-                </div>
-                <div class="col-sm-8">
-                    <h4 class="font-amatic blue">Políticas públicas de internet</h4>
-
-                    <p>Os provedores de internet e de serviços só serão obrigados a fornecer informações dos usuários se
-                        receberem ordem judicial.</p>
-                </div>
-            </div>
-            <div class="clearfix mt-lg">
-                <div class="col-sm-3 text-center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/marcocivil-tema-05.jpg"
-                         class="img-adptive" alt="">
-                </div>
-                <div class="col-sm-8">
-                    <h4 class="font-amatic blue">Neutralidade</h4>
-
-                    <p>Os provedores de internet e de serviços só serão obrigados a fornecer informações dos usuários se
-                        receberem ordem judicial.</p>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
 
 
