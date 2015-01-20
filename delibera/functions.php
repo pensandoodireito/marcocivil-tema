@@ -510,3 +510,79 @@ function get_avatar_with_title($user_id)
     
     return $avatar;
 }
+
+/**
+ * Função para incluir o campo resumo na criação de temas
+ */
+function delibera_tema_add_new_meta_field() {
+    // this will add the custom meta field to the add new term page
+    ?>
+    <div class="form-field">
+        <label for="tema_meta[excerpt]"><?php _e( 'Excerpt' ); ?></label>
+        <textarea name="tema_meta[excerpt]" id="tema_meta[excerpt]"></textarea>
+        <p class="description"><?php _e('Excerpts are optional hand-crafted summaries of your content that can be used in your theme. <a href="http://codex.wordpress.org/Excerpt" target="_blank">Learn more about manual excerpts.</a>'); ?></p>
+    </div>
+<?php
+}
+add_action( 'tema_add_form_fields', 'delibera_tema_add_new_meta_field', 10, 2 );
+
+/**
+ * Função para incluir o campo resumo na edição de um tema
+ *
+ * @param object $tema
+ */
+function delibera_tema_edit_meta_field($tema) {
+
+    // put the term ID into a variable
+    $tema_id = $tema->term_id;
+
+    // retrieve the existing value(s) for this meta field. This returns an array
+    $tema_meta = get_option( "taxonomy_$tema_id" ); ?>
+    <tr class="form-field">
+        <th scope="row" valign="top">
+            <label for="term_meta[excerpt]"><?php _e( 'Excerpt' ); ?></label>
+        </th>
+        <td>
+            <textarea name="tema_meta[excerpt]" id="tema_meta[excerpt]"><?php echo esc_attr( $tema_meta['excerpt'] ) ? esc_attr( $tema_meta['excerpt'] ) : ''; ?></textarea>
+            <p class="description"><?php _e('Excerpts are optional hand-crafted summaries of your content that can be used in your theme. <a href="http://codex.wordpress.org/Excerpt" target="_blank">Learn more about manual excerpts.</a>'); ?></p>
+        </td>
+    </tr>
+<?php
+}
+add_action( 'tema_edit_form_fields', 'delibera_tema_edit_meta_field', 10, 2 );
+
+/**
+ * Função que captura o post no ato da criação ou
+ * edição de um tema.
+ *
+ * @param int $tema_id
+ */
+function delibera_save_tema_custom_meta( $tema_id ) {
+    if ( isset( $_POST['tema_meta'] ) ) {
+        $tema_meta = get_option( "taxonomy_$tema_id" );
+        $tema_keys = array_keys( $_POST['tema_meta'] );
+        foreach ( $tema_keys as $key ) {
+            if ( isset ( $_POST['tema_meta'][$key] ) ) {
+                $tema_meta[$key] = $_POST['tema_meta'][$key];
+            }
+        }
+        // Save the option array.
+        update_option( "taxonomy_$tema_id", $tema_meta );
+    }
+}
+add_action( 'edited_tema', 'delibera_save_tema_custom_meta', 10, 2 );
+add_action( 'create_tema', 'delibera_save_tema_custom_meta', 10, 2 );
+
+/**
+ * Função para retornar o resumo de um tema
+ *
+ * @param $tema_id
+ * @return string $excerpt
+ */
+function delibera_get_tema_excerpt($tema_id) {
+
+    $tema_meta = get_option( "taxonomy_$tema_id" );
+
+    return $tema_meta['excerpt'];
+
+}
