@@ -57,8 +57,9 @@
                         <a href="<?php echo get_term_link($tema); ?>"><?php echo $tema->name; ?></a>
                     </h4>
 
-<!--                    <p>Os provedores de internet e de serviços só serão obrigados a fornecer informações dos usuários se-->
-<!--                        receberem ordem judicial.</p>-->
+                    <p>
+                        <?php echo delibera_get_tema_excerpt($tema->term_id); ?>
+                    </p>
                 </div>
             </div>
             <?php endforeach; ?>
