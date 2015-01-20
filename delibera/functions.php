@@ -296,7 +296,7 @@ add_filter('comment_form_defaults', 'delibera_comment_form');
 
 add_action('wp_enqueue_scripts', function() {
     global $deliberaThemes, $post;
-    
+
     if (get_post_type() == 'pauta')
     {
     	$situacao = delibera_get_situacao($post->ID);
@@ -308,6 +308,8 @@ add_action('wp_enqueue_scripts', function() {
             wp_enqueue_script('creta-votacao', $deliberaThemes->getThemeUrl() . '/js/creta-votacao.js', array('delibera'));
         }
     }
+
+    wp_enqueue_script('marco-civil', $deliberaThemes->getThemeUrl() . '/js/marco-civil.js', array('delibera'));
 });
 
 /**

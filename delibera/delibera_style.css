@@ -604,3 +604,14 @@ div.error p {
     margin: 0.5em 0;
     padding: 2px;
 }
+
+#stick-sidebar {
+    padding: 25px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #AF8F2C;
+    overflow: auto;
+    transition: all 500ms ease 100ms;
+    margin-bottom: 20px;
+}

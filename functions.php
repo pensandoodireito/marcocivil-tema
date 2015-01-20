@@ -5,4 +5,3 @@ function register_menu_principal() {
     register_nav_menu('menu-principal', 'Menu Principal' );
     register_nav_menu('menu-interno', 'Menu Interno' );
 }
-
