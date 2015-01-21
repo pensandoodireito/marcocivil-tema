@@ -12,55 +12,78 @@
         }
         ?>
 
-        <div class="topic">
-            <div class="meta clearfix mb-xs">
-                <p class="status pull-left fontsize-sm text-muted"> <i class="fa fa-users"></i> <?php echo delibera_get_situacao($post->ID)->name; ?></p>
-                <p class="deadline pull-left ml-lg fontsize-sm text-muted"> <i class="fa fa-calendar"></i>
-                    <?php if (delibera_get_prazo($post->ID) == -1) {
+<div class="topic">
+  <div class="row mt-md divider-bottom">
+    <div class="col-md-6">
+      <div class="meta clearfix">
+        <p class="status fontsize-sm text-muted pull-left">
+          <i class="fa fa-users"></i>
+          <?php echo delibera_get_situacao($post->ID)->name; ?></p>
+        <p class="deadline fontsize-sm text-muted pull-left ml-lg">
+          <i class="fa fa-calendar"></i>
+          <?php if (delibera_get_prazo($post->ID) == -1) {
                         echo 'Prazo encerrado';
                     } else {
                         printf(_n('Encerra em um dia', 'Encerra em %1$s dias', delibera_get_prazo($post->ID), 'delibera'), number_format_i18n(delibera_get_prazo($post->ID)));
                     } ?>
-                </p>
-            </div>
-
-            <div class="row meta meta-social clearfix">
-                <div class="col-md-12 divider-bottom">
-                    <div class="pull-left fontsize-sm text-muted">
-                        <a href=""><i class="fa fa-facebook-square"></i> Facebook</a>
-                        <a href=""><i class="fa fa-twitter ml-md"></i> Twitter</a>
-                        <a href=""><i class="fa fa-google-plus ml-md"></i> Google+</a>
-                    </div>
-                    <div class="pull-right fontsize-sm text-muted clearfix">
-                        <p class="pull-left"><a href="?delibera_print=1"><i class="fa fa-print"></i> Imprimir</a>
-                        </p>
-                        <a href="#" class="pull-left ml-md" id="delibera_seguir">
-                            <span id="delibera-seguir-text" <?php if (!$seguir) echo ' style="display: none;" ';?>><i class="icon-star-empty"></i> Seguir</span>
-                            <span id="delibera-seguindo-text"  <?php if ($seguir) echo ' style="display: none;" ';?>><i class="icon-star"></i> Seguindo</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <h2><?php the_title(); ?></h2>
-
-            <p class="meta fontsize-sm">Discussão criada por
-                <strong class="author text-danger"><?php the_author(); ?></strong> em
-                <strong class="date text-danger"><?php the_date('d/m/y'); ?></strong>
-            </p>
-
-            <div class="content"><?php the_content(); ?></div>
-
-            <?php if (!empty($temas)) : ?>
-                <p class="meta fontsize-sm text-muted">Tema: <a href="#" class="ml-sm">
-                        <?php $size = count($temas) - 1; ?>
-                        <?php foreach ($temas as $key => $tema) : ?>
-                            <a href="<?php echo get_post_type_archive_link('pauta') . "?tema_filtro[{$tema->slug}]=on"; ?>"><?php echo $tema->name; ?></a><?php echo ($key != $size) ? ',' : ''; ?>
-                        <?php endforeach; ?>
-                </p>
-            <?php endif; ?>
-
-            <?php comments_template( '', true ); ?>
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="meta text-right">
+        <div class="btn-group">
+          <button class="btn btn-default btn-sm dropdown-toggle red" type="button" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-chevron-down"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="" class="fontsize-sm text-muted"><i class="fa fa-facebook-square"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="" class="fontsize-sm text-muted"><i class="fa fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="" class="fontsize-sm text-muted"><i class="fa fa-google-plus"></i> Google+</a>
+            </li>
+            <li>
+              <a href="#" class="fontsize-sm text-muted" id="delibera_seguir">
+                <span id="delibera-seguir-text" <?php if (!$seguir) echo ' style="display: none;" ';?>><i class="fa fa-star-o"></i> Seguir</span>
+                <span id="delibera-seguindo-text"  <?php if ($seguir) echo ' style="display: none;" ';?>><i class="fa fa-star red"></i> Seguindo</span>
+              </a>
+            </li>
+            <li>
+              <a href="?delibera_print=1" class="fontsize-sm text-muted"><i class="fa fa-print"></i> Imprimir</a>
+            </li>
+          </ul>
         </div>
-    <?php endwhile; ?>
+      </div>
+    </div>
+  </div>
+  <h4 class="red"><strong>
+    <?php the_title(); ?>
+    </strong></h4>
+  <div class="mt-sm clearfix">
+    <p class="meta fontsize-sm pull-left">Discussão criada por <strong class="author text-danger">
+      <?php the_author(); ?>
+      </strong> em <strong class="date text-danger">
+      <?php the_date('d/m/y'); ?>
+      </strong>
+    </p>
+    <?php if (!empty($temas)) : ?>
+    <p class="meta fontsize-sm text-muted ml-lg pull-left">Tema:
+      <a href="#">
+        <?php $size = count($temas) - 1; ?>
+        <?php foreach ($temas as $key => $tema) : ?>
+        <a href="<?php echo get_post_type_archive_link('pauta') . "?tema_filtro[{$tema->slug}]=on"; ?>">
+        <?php echo $tema->name; ?></a>
+      <?php echo ($key != $size) ? ',' : ''; ?>
+      <?php endforeach; ?>
+    </p>
+    <?php endif; ?>
+  </div>
+  <div class="content">
+    <?php the_content(); ?>
+  </div>
+  <?php comments_template( '', true ); ?>
+</div>
+<?php endwhile; ?>
 <?php endif; ?>
