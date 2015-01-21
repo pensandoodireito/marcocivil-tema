@@ -18,7 +18,12 @@ $archive_tema = true;
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <?php get_template_part("menu", "interno"); ?>
+                <?php get_template_part("menu", "horizontal"); ?>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+
             </div>
         </div>
         <div class="row">

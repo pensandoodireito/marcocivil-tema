@@ -19,17 +19,7 @@
     <div class="container">
         <div class="temas clearfix">
             <div class="col-sm-4">
-                <div class="titulo">
-                    <h3 class="font-amatic blue text-center">Temas</h3>
-                    <div class="fontsize-sm">
-                        <p>Serão vinte e cinco artigos, divididos em cinco capítulos:</p>
-                        <p><i class="fa fa-caret-right"></i> Disposições preliminares;</p>
-                        <p><i class="fa fa-caret-right"></i> Dos direitos e garantias dos usuários; </p>
-                        <p><i class="fa fa-caret-right"></i> Da provisão de conexão e aplicações da Internet;</p>
-                        <p><i class="fa fa-caret-right"></i> Da atuação do poder público;</p>
-                        <p><i class="fa fa-caret-right"></i> Disposições Finais.</p>
-                    </div>
-                </div>
+                <?php get_template_part('menu', 'vertical'); ?>
                 <div class="mt-xl text-center">
                     <button type="button" class="btn btn-danger btn-lg font-roboto">Participe do debate!</button>
                 </div>
@@ -48,7 +38,11 @@
                             <a href="<?php echo get_term_link($tema); ?>"><?php echo $tema->name; ?></a>
                         </h4>
                         <p>
-                            <?php echo delibera_get_tema_excerpt($tema->term_id); ?>
+                            <?php
+                                if (function_exists('delibera_get_tema_excerpt')) {
+                                    echo delibera_get_tema_excerpt($tema->term_id);
+                                }
+                            ?>
                         </p>
                     </div>
                 </div>
