@@ -38,7 +38,11 @@
                             <a href="<?php echo get_term_link($tema); ?>"><?php echo $tema->name; ?></a>
                         </h4>
                         <p>
-                            <?php echo delibera_get_tema_excerpt($tema->term_id); ?>
+                            <?php
+                                if (function_exists('delibera_get_tema_excerpt')) {
+                                    echo delibera_get_tema_excerpt($tema->term_id);
+                                }
+                            ?>
                         </p>
                     </div>
                 </div>
