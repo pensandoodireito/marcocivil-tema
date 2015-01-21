@@ -43,7 +43,7 @@ class Delibera_Walker_Comment extends Walker_Comment
             $add_below = 'comment';
         } else {
             $tag = 'li';
-            $add_below = 'div-comment';
+            $add_below = 'delibera-comment';
         }
         
         $classes = array();
