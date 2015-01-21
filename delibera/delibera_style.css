@@ -181,29 +181,38 @@
 
 /* ----------- inicia comentarios --------- /
 /* titulos do mentário */
-
-#delibera #comments header {
+.comments-area #comments header {
     padding: 0;
 }
 
-#comments .comments-title {
+ #comments .comments-title {
     font-size: 18px;
     font-weight: 700;
 }
 
-#delibera #comments li.comment {
+ #comments li.comment {
     background: #ededed;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #D3D3D3;
 }
-#delibera #comments li.comment.encaminhamento {
+
+ #comments .comment-content{
+    background-color: #fff;
+    padding: 10px;
+    margin:5px 0 10px 0;
+}
+
+ #comments li.comment.encaminhamento {
     background: #d9edf7;
 }
-#delibera #comments .comment article {
+ #comments .comment article {
     padding: 9px;
 }
-#delibera #comments article header {
+ #comments article header {
     border-bottom: 1px solid #ccc !important;
 }
-#delibera #comments article header .alignleft {
+ #comments article header .alignleft {
     width: 80%;
 }
 #delibera #comments article header .alignright {
@@ -219,6 +228,13 @@
     margin-right: 10px;
     width: 20px;
 }
+
+
+
+
+
+
+
 #delibera #encaminhamentos h2 {
     margin-bottom: 18px;
     font-size: 18px;
