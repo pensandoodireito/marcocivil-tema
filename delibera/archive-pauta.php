@@ -17,10 +17,15 @@ $archive_tema = true;
 <div class="conteudo" id="marco-civil">
     <div class="container">
         <div class="row">
-            <div class="col-md-3"><?php get_template_part("menu", "interno"); ?></div>
-            <div class="col-md-9">
+            <div class="col-xs-12">
+                <?php get_template_part("menu", "interno"); ?>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                
                 <?php if ($archive_tema): ?>
-                    <h4> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/<?php echo $tema->slug; ?>.png" class="img-adptive" alt="">
+                <h4> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/<?php echo $tema->slug; ?>.png" class="img-adptive" alt="">
                 <?php echo $tema->name; ?> </h4>
                 <?php
                 echo $tema->description;
