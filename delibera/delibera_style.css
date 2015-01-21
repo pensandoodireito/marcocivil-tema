@@ -1,5 +1,3 @@
-/* div, h1, h2, h3, h4, h5, p { margin-bottom:9px; } */
-
 #delibera #content header {
     border-bottom:1px solid #ededed;
     margin-bottom:18px;
@@ -604,12 +602,9 @@ div.error p {
 }
 
 #stick-sidebar {
-    padding: 25px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    background: #AF8F2C;
-    overflow: auto;
+    padding: 20px;
+    background: #e6e6e6;
     transition: all 500ms ease 100ms;
     margin-bottom: 20px;
+    font-size: 17px;
 }

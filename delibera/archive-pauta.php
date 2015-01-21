@@ -25,12 +25,14 @@ $archive_tema = true;
             <div class="col-xs-12">
                 
                 <?php if ($archive_tema): ?>
-                <h4> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/<?php echo $tema->slug; ?>.png" class="img-adptive" alt="">
-                <?php echo $tema->name; ?> </h4>
+                <h3> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/<?php echo $tema->slug; ?>.png" class="img-adptive" alt="">
+                <?php echo $tema->name; ?> </h3>
                 <?php
                 echo $tema->description;
                 else:
                 get_delibera_header(); ?>
+
+
                 <h2>Filtrar Pautas</h2>
                 <form>
                     <ul class="status">
@@ -59,7 +61,10 @@ $archive_tema = true;
                 <?php
                 endif;
                 ?>
-                <h3 class="mt-lg">Lista de pautas sendo discutidas nesse tema</h3>
+
+                <div class="mt-lg divider-bottom">
+                    <h5 class="font-roboto red"><strong>Lista de pautas sendo discutidas nesse tema</strong></h5>
+                </div>
                 <div class="row">
                     <div id="lista-de-pautas" class="col-md-12 clearfix">
                         <?php load_template(dirname(__FILE__) . '/delibera-loop-archive.php', true); ?>
