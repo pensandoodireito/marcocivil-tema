@@ -307,6 +307,8 @@ add_action('wp_enqueue_scripts', function() {
         } else if ($situacao->slug == 'emvotacao') {
             wp_enqueue_script('creta-votacao', $deliberaThemes->getThemeUrl() . '/js/creta-votacao.js', array('delibera'));
         }
+
+        wp_enqueue_script( 'comment-reply' );
     }
 
     wp_enqueue_script('marco-civil', $deliberaThemes->getThemeUrl() . '/js/marco-civil.js', array('delibera'));
