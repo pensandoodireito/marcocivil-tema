@@ -59,6 +59,8 @@ class Delibera_Walker_Comment extends Walker_Comment
             }
         }
 
+        ob_start();
+
         ?>
 
         <?php if (($tipo == 'resolucao' || $tipo == 'encaminhamento') && $situacao->slug == 'comresolucao') : ?>
@@ -207,5 +209,7 @@ class Delibera_Walker_Comment extends Walker_Comment
             </li>
         <?php
         endif;
+
+        $output .= ob_get_clean();
     }
 }
