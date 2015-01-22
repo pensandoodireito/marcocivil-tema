@@ -177,42 +177,80 @@
     margin: 0 3px 3px 0;
     padding: 0;
 }
+/* ----------- inicia comentarios --------- */
 
 
-/* ----------- inicia comentarios --------- /
-/* titulos do mentário */
-.comments-area #comments header {
-    padding: 0;
+    .comments-area #comments header {
+        padding: 0;
+    }
+    #comments .comment-reply-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    #comments #cancel-comment-reply-link {
+        font-weight: 700;
+        color: #bc3f38;
+        margin-left: 40px;
+    }
+    #comments #comment {
+        display: block;
+        width: 100%;
+    }
+    #comments .comment-respond {
+        margin: 10px 30px;
+    }
+    #comments .comments-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    #comments li.comment {
+        background: #ededed;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #D3D3D3;
+
+    }
+    #comments .comment-form-comment label {
+        margin-right: 20px;
+    }
+    #comments .form-submit {
+        text-align: left;
+    }
+    #comments .comment-content {
+        background-color: #fff;
+        padding: 10px;
+        margin: 5px 0 10px 0;
+    }
+
+/* dentro da listagem */
+#comments .commentlist .comment-respond{
+    margin:10px 50px;
+    padding-top: 10px;
+    border-top:1px solid #ccc;
 }
 
- #comments .comments-title {
-    font-size: 18px;
-    font-weight: 700;
+/* fora da listagem */
+
+#comments .comment-respond{
+    border-top:1px solid #ccc;
+    margin:20px 50px;
+    padding-top:20px;
 }
 
- #comments li.comment {
-    background: #ededed;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #D3D3D3;
-}
 
- #comments .comment-content{
-    background-color: #fff;
-    padding: 10px;
-    margin:5px 0 10px 0;
-}
 
- #comments li.comment.encaminhamento {
+
+#comments li.comment.encaminhamento {
     background: #d9edf7;
 }
- #comments .comment article {
+#comments .comment article {
     padding: 9px;
 }
- #comments article header {
+#comments article header {
     border-bottom: 1px solid #ccc !important;
 }
- #comments article header .alignleft {
+#comments article header .alignleft {
     width: 80%;
 }
 #delibera #comments article header .alignright {
@@ -228,12 +266,7 @@
     margin-right: 10px;
     width: 20px;
 }
-
-
-
-
-
-
+/* ----------- finaliza comentarios --------- */
 
 #delibera #encaminhamentos h2 {
     margin-bottom: 18px;
