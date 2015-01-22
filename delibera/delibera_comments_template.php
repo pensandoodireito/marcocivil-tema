@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Baseado em no comments-template
  */
@@ -109,7 +108,7 @@ class Delibera_Walker_Comment extends Walker_Comment
                                     delibera_delete_comment_link(__('Deletar'),'', '');
                                 }
                             ?>
-                        </di>
+                        </div>
                     </header>
                     <section class="comment-content">
                         <?php if ($comment->comment_approved == '0') : ?>
