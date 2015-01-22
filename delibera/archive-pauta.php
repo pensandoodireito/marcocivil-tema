@@ -10,8 +10,8 @@ get_header();
 $options = delibera_get_config();
 $tema = $wp_query->get_queried_object();
 $archive_tema = false;
-if (is_object($tema) && $tema->taxonomy == "tema") {
-$archive_tema = true;
+if ( is_object($tema) && property_exists($tema, 'taxonomy') && $tema->taxonomy == "tema" ) {
+    $archive_tema = true;
 }
 ?>
 <div class="conteudo" id="marco-civil">
