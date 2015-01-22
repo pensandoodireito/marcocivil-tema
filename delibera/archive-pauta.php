@@ -23,11 +23,6 @@ if ( is_object($tema) && property_exists($tema, 'taxonomy') && $tema->taxonomy =
         </div>
         <div class="row">
             <div class="col-xs-12">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
                 
                 <?php if ($archive_tema): ?>
                 <h3> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/<?php echo $tema->slug; ?>.png" class="img-adptive" alt="">
