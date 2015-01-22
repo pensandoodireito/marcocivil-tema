@@ -8,7 +8,7 @@
                     alt="Logo: Marco Civil da Internet">
                 </div>
                 <div class="col-md-8 white">
-                    <h2 class="font-amatic">Marco Civil: o que é?</h2>
+                    <h2 class="font-amatic">O que é?</h2>
                     <p>O Marco Civil da Internet, Lei 12.965/14, estabelece princípios, garantias, direitos e deveres
                     dos usuários da Internet no Brasil, sendo a primeira lei construída de forma colaborativa entre
                     Governo e sociedade utilizando a internet como plataforma de debate.</p>
@@ -26,7 +26,7 @@
             </div>
             <div class="col-sm-8">
                 <?php
-                $temas = get_terms( 'tema', 'hide_empty=0' );
+                $temas = get_terms( 'tema', 'orderby=id&hide_empty=0' );
                 foreach($temas as $tema): ?>
                 <div class="clearfix mt-lg">
                     <div class="col-sm-3 text-center">
