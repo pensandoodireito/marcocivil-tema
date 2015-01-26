@@ -64,8 +64,36 @@ function get_delibera_header() {
 function delibera_comment_form($defaults)
 {
     global $post, $delibera_comments_padrao, $user_identity, $comment_footer;
-    $comment_footer = "";
-    
+
+    $temas = get_the_terms($post->ID, 'tema');
+
+    // Se foi definido um tema, habilita a opção para abrir a descrição do tema base num modal
+    if (count($temas) == 1) {
+
+        $tema = array_shift($temas);
+
+        $comment_footer = '<p><a data-target="#modal-' . $tema->slug . '" data-toggle="modal" href="#">Consultar o texto base do tema</a></p>
+<div class="modal fade" id="modal-' . $tema->slug . '" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h5 class="modal-title red font-roboto" id="myModalLabel"><strong>' . $tema->name . '</strong></h5>
+      </div>
+      <div class="modal-body">
+        ' . apply_filters( 'the_content', $tema->description ) . '
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>';
+
+    } else {
+        $comment_footer = "";
+    }
+
     if ($delibera_comments_padrao === true) {
         $defaults['fields'] = $defaults['must_log_in'];
         
