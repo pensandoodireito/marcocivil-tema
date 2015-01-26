@@ -56,3 +56,6 @@
 #marco-civil .detalhes-marco:after {
   clear: both;
 }
+div.mce-panel {
+  border: 1px solid #ccc !important;
+}
