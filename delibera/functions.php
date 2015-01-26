@@ -68,7 +68,7 @@ function delibera_comment_form($defaults)
     $temas = get_the_terms($post->ID, 'tema');
 
     // Se foi definido um tema, habilita a opção para abrir a descrição do tema base num modal
-    if (count($temas) == 1) {
+    if (isset($temas[0])) {
 
         $tema = array_shift($temas);
 
