@@ -25,15 +25,16 @@
                     <div class="base">&nbsp;</div>
                 </div>
                 <div class="mt-xl text-center">
-                    <button type="button" class="btn btn-danger btn-lg font-roboto">Participe do debate!</button>
+                    <a href="<?php echo pensando_get_participe_link(); ?>" class="btn btn-danger btn-lg font-roboto">Participe do debate!</a>
                 </div>
                 
             </div>
             <div class="col-sm-8">
                 <div class="mt-lg">
-                    <h3 class="font-amatic red text-center"><strong>Temas</strong></h3>
-                    <p class="ml-lg mr-lg fontsize-lg"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum, lacus vitae eleifend aliquet, leo
-                    lacus consequat elit, sed sollicitudin mauris massa vel erat. </strong></p>
+                    <h3 class="font-amatic red text-center"><strong>Eixos</strong></h3>
+                    <p class="ml-lg mr-lg fontsize-lg"><strong>Esses são os eixos dentro dos quais o debate
+                        acontecerá. Lembre-se de postar os comentários no eixo e na pauta correta para aumentar
+                        a sua relevância para o debate.</strong></p>
                 </div>
                 <?php
                 $temas = get_terms( 'tema', 'orderby=id&hide_empty=0' );
