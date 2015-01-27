@@ -51,7 +51,7 @@ if (is_object($tema) && property_exists($tema, 'taxonomy') && $tema->taxonomy ==
                                                     <li>
                                                 <span
                                                     class="<?php echo (isset($_GET['situacao_filtro'][$situacao->slug]) && $_GET['situacao_filtro'][$situacao->slug] == 'on') ? 'selected' : ''; ?>">
-                                                <?php echo $situacao->name; ?>
+                                                <?php // echo $situacao->name; ?>
                                                     <input type="hidden"
                                                            name="situacao_filtro[<?php echo $situacao->slug; ?>]"
                                                            value="<?php echo (isset($_GET['situacao_filtro'][$situacao->slug]) && $_GET['situacao_filtro'][$situacao->slug] == 'on') ? 'on' : ''; ?>"/>
