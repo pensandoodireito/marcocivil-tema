@@ -21,7 +21,6 @@ $situacao = delibera_get_situacao($post->ID);
             } ?>
     </p>
     <p class="meta fontsize-sm ml-lg text-muted pull-left">Tema:
-      <a href="#">
         <?php $size = count($temas) - 1; ?>
         <?php foreach ($temas as $key => $tema) : ?>
         <a href="<?php echo get_post_type_archive_link('pauta') . "?tema_filtro[{$tema->slug}]=on"; ?>">
@@ -55,7 +54,7 @@ $situacao = delibera_get_situacao($post->ID);
     <?php endif; ?>
     <?php if (in_array($situacao->slug, array('emvotacao', 'discussao', 'validacao'))) : ?>
     <p class="pull-left fontsize-sm ml-lg">
-      <a href="#"><i class="fa fa-comment"></i>
+      <a href="#"><i class="fa fa-comment"></i></a>
         <a href="<?php the_permalink() ?>">
         <?php echo delibera_get_situation_button($post->ID); ?></a>
     </p>
