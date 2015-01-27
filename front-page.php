@@ -10,8 +10,8 @@
                 <div class="col-md-8 white">
                     <h2 class="font-amatic">O que é?</h2>
                     <p>O Marco Civil da Internet, Lei 12.965/14, que estabelece princípios, garantias, direitos e deveres dos
-                        usuários da Internet no Brasil, é uma lei construída de forma colaborativa entre Governo e sociedade
-                        utilizando a internet como plataforma de debate.</p>
+                    usuários da Internet no Brasil, é uma lei construída de forma colaborativa entre Governo e sociedade
+                    utilizando a internet como plataforma de debate.</p>
                 </div>
             </div>
         </div>
@@ -19,12 +19,22 @@
     <div class="container">
         <div class="temas clearfix">
             <div class="col-sm-4">
-                <?php get_template_part('menu', 'vertical'); ?>
+                
+                <div class="menu-home">
+                    <?php get_template_part('menu', 'vertical'); ?>
+                    <div class="base">&nbsp;</div>
+                </div>
                 <div class="mt-xl text-center">
                     <button type="button" class="btn btn-danger btn-lg font-roboto">Participe do debate!</button>
                 </div>
+                
             </div>
             <div class="col-sm-8">
+                <div class="mt-lg">
+                    <h3 class="font-amatic red text-center"><strong>Temas</strong></h3>
+                    <p class="ml-lg mr-lg fontsize-lg"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum, lacus vitae eleifend aliquet, leo
+                    lacus consequat elit, sed sollicitudin mauris massa vel erat. </strong></p>
+                </div>
                 <?php
                 $temas = get_terms( 'tema', 'orderby=id&hide_empty=0' );
                 foreach($temas as $tema): ?>
@@ -34,15 +44,15 @@
                         class="img-adptive" alt=""></a>
                     </div>
                     <div class="col-sm-8">
-                        <h4 class="font-amatic blue">
-                            <a href="<?php echo get_term_link($tema); ?>"><?php echo $tema->name; ?></a>
-                        </h4>
+                        <h4 class="font-amatic blue"><strong>
+                        <a href="<?php echo get_term_link($tema); ?>"><?php echo $tema->name; ?></a>
+                        </strong></h4>
                         <p>
-                            <?php
-                                if (function_exists('delibera_get_tema_excerpt')) {
-                                    echo delibera_get_tema_excerpt($tema->term_id);
-                                }
-                            ?>
+                        <?php
+                        if (function_exists('delibera_get_tema_excerpt')) {
+                        echo delibera_get_tema_excerpt($tema->term_id);
+                        }
+                        ?>
                         </p>
                     </div>
                 </div>
