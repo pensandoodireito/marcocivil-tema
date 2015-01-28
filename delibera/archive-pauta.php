@@ -32,7 +32,7 @@ if (is_object($tema) && property_exists($tema, 'taxonomy') && $tema->taxonomy ==
                     </h4>
                     </div>
                     <?php
-                    echo $tema->description;
+                    echo apply_filters( 'the_content', $tema->description );
                 else:
                     get_delibera_header(); ?>
             <div class="row">
