@@ -26,8 +26,8 @@
 }
 #marco-civil .temas {
   position: relative;
-  background-color: #faf4d1;
   padding: 40px 20px;
+  background: url("../images/bck-debates-marco-civil-temas.jpg") no-repeat left bottom #faf4d1;
 }
 #marco-civil .temas .menu-home {
   margin-top: 60%;
