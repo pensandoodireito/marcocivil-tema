@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-8 white">
                     <h2 class="font-amatic">O que é?</h2>
-                    <p>O Marco Civil da Internet, Lei 12.965/14, que estabelece princípios, garantias, direitos e deveres dos
+                    <p>O Marco Civil da Internet, Lei 12.965 de 23 de abril de 14, que estabelece princípios, garantias, direitos e deveres dos
                     usuários da Internet no Brasil, é uma lei construída de forma colaborativa entre Governo e sociedade
                     utilizando a internet como plataforma de debate.</p>
                 </div>
@@ -65,15 +65,9 @@
         <div class="detalhes-marco white">
             <div class="col-md-8">
                 <h3 class="font-amatic">Conheça mais sobre a Lei</h3>
-                <p>O Marco Civil da Internet, Lei 12.965/14, estabelece princípios, garantias, direitos e deveres dos
-                usuários da Internet no Brasil, sendo a primeira lei construída de forma colaborativa entre Governo e
-                sociedade utilizando a internet como plataforma de debate.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum, lacus vitae eleifend aliquet, leo
-                lacus consequat elit, sed sollicitudin mauris massa vel erat. </p>
-                <p>Quisque ultricies laoreet orci. Etiam eros elit, consectetur a enim nec, dapibus placerat neque. Duis sed
-                erat urna. Fusce auctor elit vitae massa posuere tempor. Nunc elementum sollicitudin felis sed euismod.
-                Nam vulputate, arcu porta pretium lacinia, est lorem gravida massa, ac faucibus quam neque nec dui. Duis
-                accumsan rutrum dolor, a lacinia erat gravida non</p>
+                <p>A Lei está pautada em três pilares essenciais: neutralidade de rede, liberdade de expressão e privacidade dos usuários. Durante toda a tramitação do projeto, os mais diferentes pontos de vista foram considerados provocando grande debate nacional. </p>
+
+                 <p>   O texto resultante foi elogiado por especialistas brasileiros e estrangeiros, resultando em uma abordagem que busca definir direitos e deveres, sem apenas criminalizar condutas na rede.</p>
             </div>
             <div class="col-md-4 text-center">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-comp.jpg" class="img-adptive" alt="">
