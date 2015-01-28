@@ -41,7 +41,7 @@
                 foreach($temas as $tema): ?>
                 <div class="clearfix mt-lg">
                     <div class="col-sm-3 text-center">
-                        <a href="<?php echo get_term_link($tema); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/<?php echo $tema->slug; ?>.jpg"
+                        <a href="<?php echo get_term_link($tema); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/<?php echo $tema->slug; ?>.png"
                         class="img-adptive" alt=""></a>
                     </div>
                     <div class="col-sm-8">
