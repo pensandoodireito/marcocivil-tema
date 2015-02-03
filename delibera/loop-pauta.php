@@ -39,7 +39,7 @@
               <a href="javascript:var socialw = window.open('https://www.facebook.com/sharer/sharer.php?u=<?php echo pensandoodireito_bitly_url(get_the_permalink()); ?>', 'socialw', 'width=470, height=250, location=no');" class="fontsize-sm text-muted"><i class="fa fa-facebook-square"></i> Facebook</a>
             </li>
             <li>
-              <a href="javascript:var socialw = window.open('http://www.twitter.com/share?url=<?php echo pensandoodireito_bitly_url(get_the_permalink()); ?>', 'socialw', 'width=470, height=250, location=no');" class="fontsize-sm text-muted"><i class="fa fa-twitter"></i> Twitter</a>
+              <a href="javascript:var socialw = window.open('http://www.twitter.com/share?url=<?php echo pensandoodireito_bitly_url(get_the_permalink()); ?>', 'socialw', 'width=470, height=280, location=no');" class="fontsize-sm text-muted"><i class="fa fa-twitter"></i> Twitter</a>
             </li>
             <li>
               <a href="javascript:var socialw = window.open('https://plus.google.com/share?url=<?php echo pensandoodireito_bitly_url(get_the_permalink()); ?>', 'socialw', 'width=470, height=250, location=no');" class="fontsize-sm text-muted"><i class="fa fa-google-plus"></i> Google+</a>
