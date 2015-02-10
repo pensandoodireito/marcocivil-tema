@@ -29,6 +29,11 @@
   padding: 40px 20px;
   background: url("../images/bck-debates-marco-civil-temas.jpg") no-repeat left bottom #faf4d1;
 }
+@media (max-width: 767px) {
+  #marco-civil .temas {
+    padding: 40px 20px 250px 20px;
+  }
+}
 #marco-civil .temas .menu-home {
   margin-top: 60%;
   padding: 30px;
