@@ -84,7 +84,7 @@ if (is_object($tema) && property_exists($tema, 'taxonomy') && $tema->taxonomy ==
                 <?php
                     endif;
                 ?>
-                <div class="col-md-12">
+                <div class="col-md-<?php echo ($archive_tema ? "12" : "9"); ?>">
                     <div class="mt-lg divider-bottom">
                         <h5 class="font-roboto red"><strong>Lista de pautas sendo discutidas nesse tema</strong></h5>
                     </div>
