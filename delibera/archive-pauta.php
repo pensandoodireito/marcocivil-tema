@@ -90,6 +90,17 @@ if (is_object($tema) && property_exists($tema, 'taxonomy') && $tema->taxonomy ==
                         <h5 class="font-roboto red"><strong>Lista de pautas sendo discutidas nesse tema</strong></h5>
                     </div>
                     <div class="row">
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <input name="filter_pauta" class="form-control" placeholder="Buscar pauta..." value="<?php echo @$_REQUEST['filter_pauta']; ?>" type="text">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Buscar</button>
+                          </span>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                    </div>
+                    <div class="row">
                         <div id="lista-de-pautas" class="col-md-12 clearfix">
                             <?php load_template(dirname(__FILE__) . '/delibera-loop-archive.php', true); ?>
                             <?php
