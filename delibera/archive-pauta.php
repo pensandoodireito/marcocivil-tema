@@ -15,6 +15,7 @@ if (is_object($tema) && property_exists($tema, 'taxonomy') && $tema->taxonomy ==
 }
 ?>
     <div class="conteudo" id="marco-civil">
+    <form>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -45,7 +46,7 @@ if (is_object($tema) && property_exists($tema, 'taxonomy') && $tema->taxonomy ==
                                 </div>
                                 <div class="panel-body">
                                     <div class="filtro">
-                                        <form>
+
                                             <ul class="status">
                                                 <?php foreach (get_terms('situacao') as $situacao) : ?>
                                                     <li>
@@ -73,7 +74,7 @@ if (is_object($tema) && property_exists($tema, 'taxonomy') && $tema->taxonomy ==
                                             <div class="textright">
                                                 <button type="submit" class="btn">Filtrar</button>
                                             </div>
-                                        </form>
+
 
                                     </div>
                                 </div>
@@ -123,4 +124,5 @@ if (is_object($tema) && property_exists($tema, 'taxonomy') && $tema->taxonomy ==
                 </div>
             </div>
         </div>
+    </form>
 <?php get_footer(); ?>

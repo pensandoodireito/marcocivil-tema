@@ -43,8 +43,6 @@ function get_delibera_header() {
                 ?>
             </p>
         </div>
-
-        <form>
         <div class="row">
             <div class="col-sm-12">
                 <div class="input-group">
@@ -56,7 +54,6 @@ function get_delibera_header() {
                 <!-- /input-group -->
             </div>
         </div>
-        </form>
     </header>
 
 	<?php
