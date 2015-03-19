@@ -43,9 +43,20 @@ function get_delibera_header() {
                 ?>
             </p>
         </div>
-        <div class="alignright">
-            <a class="btn" href="<?php echo get_page_link(get_page_by_slug(DELIBERA_ABOUT_PAGE)->ID); ?>"><?php _e('Saiba por que e como participar', 'delibera'); ?></a>
+
+        <form>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="input-group">
+                    <input name="filter_pauta" class="form-control" placeholder="Buscar pauta..." value="<?php echo @$_REQUEST['filter_pauta']; ?>" type="text">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Buscar</button>
+                          </span>
+                </div>
+                <!-- /input-group -->
+            </div>
         </div>
+        </form>
     </header>
 
 	<?php

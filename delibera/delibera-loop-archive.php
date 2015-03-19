@@ -1,4 +1,9 @@
 <?php
+if (isset($_REQUEST['filter_pauta'])) {
+    global $query_string;
+    query_posts( $query_string . '&s=' . $_REQUEST['filter_pauta'] );
+}
+
 if (have_posts()) :
 while (have_posts()) :
 the_post();
