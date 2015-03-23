@@ -25,7 +25,7 @@
                     <div class="base">&nbsp;</div>
                 </div>
                 <div class="mt-xl text-center">
-                    <a href="<?php echo pensando_get_participe_link(); ?>" class="btn btn-danger btn-lg font-roboto">Participe do debate!</a>
+                    <a href="<?php echo participacao_get_participe_link(); ?>" class="btn btn-danger btn-lg font-roboto">Participe do debate!</a>
                 </div>
                 
             </div>
