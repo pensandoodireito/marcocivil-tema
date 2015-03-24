@@ -572,3 +572,9 @@ div.error p {
     margin-bottom: 20px;
     font-size: 17px;
 }
+
+/* editor de texto (nova pauta, tano para visual quanto para texto)*/
+.wp-editor-container textarea.wp-editor-area{
+    border: 1px solid #ccc;
+}
+#nova-pauta-conteudo_ifr {border: 1px solid #ccc;}
