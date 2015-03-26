@@ -48,7 +48,15 @@ $situacao = delibera_get_situacao($post->ID);
   <?php endif; ?>
   <div class="clearfix mt-0">
     <p class="meta fontsize-sm pull-left">Criada por <strong class="author text-danger">
-      <?php the_author(); ?>
+      <?php
+        $autor_exibicao = get_post_meta(get_the_ID(), '_autor_exibicao', true);
+
+        if (isset($autor_exibicao) && $autor_exibicao != "") {
+            echo $autor_exibicao;
+        } else {
+            the_author();
+        }
+      ?>
       </strong> em <strong class="date text-danger"><?php echo get_the_date('d/m/y'); ?></strong>
     </p>
     <?php $label = delibera_get_comments_count_by_type($post->ID); ?>
