@@ -1,11 +1,11 @@
 <?php 
 $titulo             = isset($_POST['nova-pauta-titulo'])    ? stripslashes($_POST['nova-pauta-titulo']) : '';
-$pdf_contribution   = isset($_POST['nova-pauta-pdf-contribution'])  ? stripslashes($_POST['nova-pauta-pdf-contribution']) : '';
+$pdf_contribution   = isset($_POST['pauta_pdf_contribution'])  ? stripslashes($_POST['pauta_pdf_contribution']) : '';
 $conteudo           = isset($_POST['nova-pauta-conteudo'])  ? stripslashes($_POST['nova-pauta-conteudo']) : '';
 $resumo             = isset($_POST['nova-pauta-resumo'])    ? stripslashes($_POST['nova-pauta-resumo']) : '';
 ?>
 <div class="clearfix">
-    <form method="post" id="nova-pauta-form" class="clearfix">
+    <form method="post" id="nova-pauta-form" class="clearfix" enctype="multipart/form-data">
         <?php wp_nonce_field('delibera_nova_pauta'); ?>
         <div class="clearfix">
             <div class="alignleft">
@@ -29,7 +29,7 @@ $resumo             = isset($_POST['nova-pauta-resumo'])    ? stripslashes($_POS
                                 <?php wp_editor($conteudo, 'nova-pauta-conteudo'); ?>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="pdfVersion">
-                                <input type="file" data-filename-placement="inside" name="nova-pauta-pdf-contribution" title="Selecione o arquivo PDF que você deseja enviar.">
+                                <input type="file" data-filename-placement="inside" name="pauta_pdf_contribution" title="Selecione o arquivo PDF que você deseja enviar.">
                             </div>
                         </div>
                     </div>
