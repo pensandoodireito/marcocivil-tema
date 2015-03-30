@@ -1,8 +1,8 @@
 <?php 
-$titulo     = isset($_POST['nova-pauta-titulo'])    ? stripslashes($_POST['nova-pauta-titulo']) : '';
-$conteudo   = isset($_POST['nova-pauta-conteudo'])  ? stripslashes($_POST['nova-pauta-conteudo']) : '';
-$resumo     = isset($_POST['nova-pauta-resumo'])    ? stripslashes($_POST['nova-pauta-resumo']) : '';
-
+$titulo             = isset($_POST['nova-pauta-titulo'])    ? stripslashes($_POST['nova-pauta-titulo']) : '';
+$pdf_contribution   = isset($_POST['nova-pauta-pdf-contribution'])  ? stripslashes($_POST['nova-pauta-pdf-contribution']) : '';
+$conteudo           = isset($_POST['nova-pauta-conteudo'])  ? stripslashes($_POST['nova-pauta-conteudo']) : '';
+$resumo             = isset($_POST['nova-pauta-resumo'])    ? stripslashes($_POST['nova-pauta-resumo']) : '';
 ?>
 <div class="clearfix">
     <form method="post" id="nova-pauta-form" class="clearfix">
@@ -15,10 +15,26 @@ $resumo     = isset($_POST['nova-pauta-resumo'])    ? stripslashes($_POST['nova-
                 </div>
                 
                 <div class="divider"></div>
-        
+
                 <div class="row">
-                    <?php wp_editor($conteudo, 'nova-pauta-conteudo'); ?>
-                </div>
+                    <div role="tabpanel">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#textVersion" aria-controls="textVersion" role="tab" data-toggle="tab">Texto</a></li>
+                            <li role="presentation"><a href="#pdfVersion" aria-controls="pdfVersion" role="tab" data-toggle="tab">Arquivo PDF</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fade in" id="textVersion">
+                                <?php wp_editor($conteudo, 'nova-pauta-conteudo'); ?>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="pdfVersion">
+                                <input type="file" data-filename-placement="inside" name="nova-pauta-pdf-contribution" title="Selecione o arquivo PDF que você deseja enviar.">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>        
                 
                 <div class="divider"></div>
         
