@@ -29,7 +29,9 @@ $resumo             = isset($_POST['nova-pauta-resumo'])    ? stripslashes($_POS
                                 <?php wp_editor($conteudo, 'nova-pauta-conteudo'); ?>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="pdfVersion">
-                                <input type="file" data-filename-placement="inside" name="pauta_pdf_contribution" title="Selecione o arquivo PDF que você deseja enviar.">
+                                <div class="mt-md">
+                                    <input class="btn btn-primary" type="file" data-filename-placement="inside" name="pauta_pdf_contribution" title="Selecione o arquivo PDF que você deseja enviar.">
+                                </div>
                             </div>
                         </div>
                     </div>
