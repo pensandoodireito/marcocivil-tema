@@ -83,7 +83,7 @@ class Delibera_Walker_Comment extends Walker_Comment
                     <header class="coment-meta comment-author vcard clearfix">
                         <div class="alignleft">
                             <?php echo get_avatar($comment, 44); ?>
-                            <cite class="fn"><a href="<?php echo get_author_posts_url($comment->user_id); ?>" rel="external nofollow" class="url"><?php echo $comment->comment_author; ?></a></cite>
+                            <cite class="fn"><?php echo $comment->comment_author; ?></cite>
                             <a href="<?php echo htmlspecialchars(delibera_get_comment_link($comment->comment_ID)); ?>">
                                 <time datetime="<?php echo get_comment_date('c'); ?>">
                                     <?php
