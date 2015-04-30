@@ -44,3 +44,12 @@ function autor_exibicao_save( $post_id )
     }
 
 }
+
+add_action('wp_footer', 'marcocivil_anotacoes_sistematizacao');
+function marcocivil_anotacoes_sistematizacao() {
+    if ($_SERVER['QUERY_STRING'] == "anotar") { 
+?>
+    <script src="<?php echo ANOTATION_SERVER; ?>/embed.js"></script>
+<?php
+    }
+}
