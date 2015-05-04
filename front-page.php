@@ -19,7 +19,7 @@
     <div class="container">
         <div class="temas clearfix">
             <div class="col-sm-4">
-                
+
                 <div class="menu-home">
                     <?php get_template_part('menu', 'vertical'); ?>
                     <div class="base">&nbsp;</div>
@@ -27,7 +27,7 @@
                 <div class="mt-xl text-center">
                     <a href="<?php echo participacao_get_participe_link(); ?>" class="btn btn-danger btn-lg font-roboto">Participe do debate!</a>
                 </div>
-                
+
             </div>
             <div class="col-sm-8">
                 <div class="mt-lg">
@@ -76,5 +76,5 @@
     </div>
 </div>
 <?php get_template_part('mini-tutorial'); ?>
-<?php get_template_part('noticias'); ?>
+<?php get_template_part('front','noticias'); ?>
 <?php get_footer(); ?>
