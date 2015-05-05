@@ -214,3 +214,8 @@ div.mce-panel {
   margin: 20px;
   border: 1px solid #c7c5c7;
 }
+#marco-numeros .top {
+  background-color: #0e6490;
+  margin: 20px 0;
+  padding: 40px 0;
+}
