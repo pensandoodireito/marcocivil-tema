@@ -23,7 +23,7 @@
                     </ul>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <div class="container">
@@ -98,7 +98,7 @@
                 <?php
                 $temas = get_terms( 'tema', 'orderby=id&hide_empty=0' );
                 foreach($temas as $tema): ?>
-                
+
                 <div class="col-sm-3 text-center">
                     <a href="<?php echo get_term_link($tema); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/<?php echo $tema->slug; ?>.png"
                     class="img-adptive" alt=""></a>
@@ -106,7 +106,7 @@
                     <a href="<?php echo get_term_link($tema); ?>"><?php echo $tema->name; ?></a>
                     </strong></h5>
                 </div>
-                
+
                 <?php endforeach; ?>
             </div>
             <div class="row">
@@ -133,27 +133,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-envie">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Nome:</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email:</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputFile">Selecione o arquivo</label>
-                                <input type="file" id="exampleInputFile">
-                                <p class="help-block"><small>Arquivos em PDF</small></p>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Concordo
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-default">Enviar</button>
-                        </form>
+                        <?php echo do_shortcode('[contact-form-7 id="416" title="Contribuição Decreto"]');?>
                     </div>
                 </div>
             </div>
