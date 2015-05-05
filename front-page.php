@@ -33,7 +33,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum, lacus vitae eleifend aliquet, leo lacus consequat elit, sed sollicitudin mauris massa vel erat.</p>
 
                     <div class="mt-md">
-                        <a href="<?php echo participacao_get_participe_link(); ?>" class="btn btn-danger btn-lg font-roboto">Participe também!</a>
+                        <a href="<?php echo get_site_url(); ?>/sistematizacao" class="btn btn-danger btn-lg font-roboto">Participe da Sistematização!</a>
                     </div>
                 </div>
             </div>
