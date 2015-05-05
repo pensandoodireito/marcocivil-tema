@@ -52,6 +52,5 @@
         </div>
     </div>
 </div>
-<?php get_template_part('mini-tutorial'); ?>
 <?php get_template_part('front','noticias'); ?>
 <?php get_footer(); ?>
