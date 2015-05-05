@@ -109,6 +109,18 @@
                 
                 <?php endforeach; ?>
             </div>
+            <div class="row">
+                <div class="confira text-center">
+                    <div class="col-md-6">
+                        <p class="h4"><a href="#" class="red font-roboto"><strong>Veja todo o histórico do debate online<strong></a></p>
+                        <p><small>Confira como foi a interação na plataforma</small></p>
+                    </div>
+                    <div class="col-md-5 divider-left">
+                        <p class="h4"><a href="#" class="red font-roboto"><strong>Veja todo o histórico do debate online<strong></a></p>
+                        <p><small>Confira como foi a interação na plataforma</small></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="envie">
@@ -120,24 +132,29 @@
                     <p>Quisque ultricies laoreet orci. Etiam eros elit, consectetur a enim nec, dapibus placerat neque. Duis sed erat urna. Fusce auctor elit vitae massa posuere tempor. Nunc elementum sollicitudin felis sed euismod. Nam vulputate, arcu porta pretium lacinia, est lorem gravida massa, ac faucibus quam neque nec dui. Duis accumsan rutrum dolor, a lacinia erat gravida non</p>
                 </div>
                 <div class="col-md-6">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputFile">Selecione o arquivo</label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="help-block">Example block-level help text here.</p>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Check me out
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-
+                    <div class="form-envie">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Nome:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">Selecione o arquivo</label>
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block"><small>Arquivos em PDF</small></p>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Concordo
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Enviar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
