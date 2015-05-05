@@ -1,3 +1,16 @@
+/*
+@path-nv1: 		"..";
+@path-nv2: 		"../..";
+@path-nv3: 		"../../..";
+@path-nv4: 		"../../../..";
+@path-nv5: 		"../../../../..";
+
+@path-var-boots:    "bootstrap/variables.less";
+@path-mixins-boots: "bootstrap/mixins.less";
+@path-var-theme:    "theme/theme-variables.less";
+@path-less: 		"css/less";
+@path-participacao: "participacao-tema";
+*/
 #marco-civil .apresenta-protecao {
   background: url("../images/bck-debates-marco-02.jpg") repeat top left #a58d37;
   padding: 40px 20px;
@@ -27,7 +40,7 @@
 #marco-civil .temas {
   position: relative;
   padding: 40px 20px;
-  background: url("../images/bck-debates-marco-civil-temas.jpg") no-repeat left bottom #faf4d1;
+  background-color: #faf4d1;
 }
 @media (max-width: 767px) {
   #marco-civil .temas {
@@ -35,21 +48,21 @@
   }
 }
 #marco-civil .temas .menu-home {
-  margin-top: 60%;
+  margin-top: 10%;
   padding: 30px;
-  border-image-slice: 38 30 35 37;
-  border-image-width: 20px 20px 20px 20px;
-  border-image-outset: 0px 0px 0px 0px;
-  border-image-repeat: stretch stretch;
-  border-image-source: url("../images/bck-menuhome.jpg");
+  /*border-image-slice: 38 30 35 37;
+            border-image-width: 20px 20px 20px 20px;
+            border-image-outset: 0px 0px 0px 0px;
+            border-image-repeat: stretch stretch;
+            border-image-source: url("../images/bck-menuhome.jpg");*/
   background-color: #fff;
-}
-#marco-civil .temas .menu-home .base {
-  background: url("../images/base-menuhome.jpg") no-repeat center bottom;
-  min-width: 127px;
-  width: 100%;
-  height: 39px;
-  margin-bottom: -72px;
+  /*.base {
+                background: url("../images/base-menuhome.jpg") no-repeat center bottom;
+                min-width: 127px;
+                width: 100%;
+                height: 39px;
+                margin-bottom: -72px;
+            }*/
 }
 @media (max-width: 767px) {
   #marco-civil .temas .menu-home {
@@ -82,4 +95,95 @@
 }
 div.mce-panel {
   border: 1px solid #ccc !important;
+}
+#sistematizacao .sist-top {
+  margin-top: 80px;
+}
+#sistematizacao .sist-content {
+  position: relative;
+}
+#sistematizacao .sist-content:before,
+#sistematizacao .sist-content:after {
+  content: " ";
+  display: table;
+}
+#sistematizacao .sist-content:after {
+  clear: both;
+}
+#sistematizacao .sist-logo {
+  position: absolute;
+  top: -65px;
+  left: 0;
+}
+@media (max-width: 992px) {
+  #sistematizacao .sist-logo {
+    width: 100%;
+    text-align: center;
+  }
+}
+#sistematizacao .sist-menu {
+  padding: 30px 0 0 0;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "roboto", "opensans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (max-width: 992px) {
+  #sistematizacao .sist-menu {
+    margin: 280px 10px 30px 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  #sistematizacao .sist-menu {
+    margin-top: 150px;
+    text-align: center;
+  }
+}
+#sistematizacao .sist-menu li {
+  margin: 10px 0;
+}
+#sistematizacao .sist-menu li a {
+  color: #fff;
+}
+#sistematizacao .sist-menu li a:hover {
+  color: #fff;
+}
+#sistematizacao .sist-base {
+  background: url("../images/bck-sistematizacao.jpg") repeat center bottom;
+  margin: 40px 0;
+  min-height: 265px;
+}
+#sistematizacao .oque {
+  margin: 20px 0;
+}
+#sistematizacao .comoparticipar {
+  background-color: #f9f1d5;
+  padding: 40px 0;
+  margin: 20px 0;
+}
+#sistematizacao .comoparticipar .menu-participar {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px -4px #323232;
+  margin: 20px;
+}
+#sistematizacao .comoparticipar .menu-participar li {
+  margin-top: 10px;
+  border-top: 1px solid #ecdfb4;
+  padding-top: 10px;
+}
+#sistematizacao .comoparticipar .menu-participar li:first-child {
+  margin-top: 0;
+  border-top: 0;
+  padding-top: 0;
+}
+#sistematizacao .comoparticipar .menu-participar li a {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "roboto", "opensans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#sistematizacao .eixos {
+  margin: 20px 0;
+  padding: 40px 0;
+  background-color: #e9e9e9;
 }
