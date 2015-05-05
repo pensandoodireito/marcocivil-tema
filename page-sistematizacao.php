@@ -133,7 +133,10 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-envie">
-                        <?php echo do_shortcode('[contact-form-7 id="416" title="Contribuição Decreto"]');?>
+                        <?php
+                            the_post();
+                            the_content();
+                        ?>
                     </div>
                 </div>
             </div>
