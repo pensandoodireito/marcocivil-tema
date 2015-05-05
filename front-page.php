@@ -18,6 +18,11 @@
     </div>
     <div class="container">
         <div class="temas clearfix">
+            <div class="col-md-4">
+                <div class="menu-home">
+                    <?php get_template_part('menu', 'vertical'); ?>
+                </div>
+            </div>
             <div class="col-md-8 text-center pt-lg pr-lg pb-lg pl-lg">
                 <div>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sistematizacao-marcocivil.png" class="img-adptive"
@@ -30,11 +35,6 @@
                     <div class="mt-md">
                         <a href="<?php echo participacao_get_participe_link(); ?>" class="btn btn-danger btn-lg font-roboto">Participe também!</a>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="menu-home">
-                    <?php get_template_part('menu', 'vertical'); ?>
                 </div>
             </div>
         </div>
