@@ -24,18 +24,17 @@
                 </div>
             </div>
             <div class="col-md-8 text-center pt-lg pr-lg pb-lg pl-lg">
+                <div class="mt-md">
+                    <h4 class="font-roboto red"><strong>Sistematização do Debate</strong></h4>
+                    <p>O Marco Civil da Internet, Lei 12.965/14, estabelece princípios, garantias, direitos e deveres dos usuários da Internet no Brasil, sendo a primeira lei construída de forma colaborativa entre Governo e sociedade utilizando a internet como plataforma de debate.</p>                    
+                </div>
                 <div>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sistematizacao-marcocivil.png" class="img-adptive"
                     alt="Logo: Sistematização do Marco Civil da Internet">
                 </div>
                 <div class="mt-md">
-                    <h4 class="font-roboto red"><strong>Lorem ispsum dolor</strong></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum, lacus vitae eleifend aliquet, leo lacus consequat elit, sed sollicitudin mauris massa vel erat.</p>
-
-                    <div class="mt-md">
-                        <a href="<?php echo get_site_url(); ?>/sistematizacao" class="btn btn-danger btn-lg font-roboto">Participe da Sistematização!</a>
-                    </div>
-                </div>
+                    <a href="<?php echo get_site_url(); ?>/sistematizacao" class="btn btn-danger btn-lg font-roboto">Participe da Sistematização!</a>
+                </div>                
             </div>
         </div>
     </div>
