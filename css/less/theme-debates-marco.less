@@ -1,4 +1,10 @@
 @import "../../../participacao-tema/css/less/elements.less";
+// mixins para este arquivo
+.margin-padding-default() {
+    padding: 40px 0;
+    margin: 20px 0;
+}
+
 #marco-civil {
     .apresenta-protecao {
         .clearfix();
@@ -34,7 +40,7 @@
             border-image-outset: 0px 0px 0px 0px;
             border-image-repeat: stretch stretch;
             border-image-source: url("../images/bck-menuhome.jpg");*/
-            
+
             background-color: #fff;
             /*.base {
                 background: url("../images/base-menuhome.jpg") no-repeat center bottom;
@@ -43,7 +49,7 @@
                 height: 39px;
                 margin-bottom: -72px;
             }*/
-            
+
             @media(max-width: 767px) {
                 margin-top: 20px;
             }
@@ -127,8 +133,7 @@ div.mce-panel {
     }
     .comoparticipar {
         background-color: #f9f1d5;
-        padding: 40px 0;
-        margin: 20px 0;
+        .margin-padding-default();
         .menu-participar {
             padding: 20px;
             background-color: #fff;
@@ -153,8 +158,7 @@ div.mce-panel {
         }
     }
     .eixos {
-        margin: 20px 0;
-        padding: 40px 0;
+        .margin-padding-default();
         background-color: #e9e9e9;
         .confira {
             padding: 20px;
@@ -167,8 +171,7 @@ div.mce-panel {
         }
     }
     .envie {
-        margin: 20px 0;
-        padding: 40px 0;
+        .margin-padding-default();
         .form-envie {
             padding: 20px;
             background-color: #f7f7f7;
@@ -181,8 +184,23 @@ div.mce-panel {
 
 #marco-numeros {
     .top {
-        background-color:#0e6490;
-        margin: 20px 0;
-        padding: 40px 0;
+        background-color: #0e6490;
+        .margin-padding-default();
+    }
+    .criacao-pautas {
+        .margin-padding-default();
+    }
+    .acessos {
+        background-color: #f7f7f7;
+    }
+    .redes-sociais {
+        .margin-padding-default();
+    }
+    .mapas {
+        .margin-padding-default();
+        background-color: #f7f7f7;
+    }
+    .palavras {
+        .margin-padding-default();
     }
 }
