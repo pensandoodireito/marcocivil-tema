@@ -26,7 +26,8 @@
             <div class="col-md-8 text-center pt-lg pr-lg pb-lg pl-lg">
                 <div class="mt-md">
                     <h4 class="font-roboto red"><strong>Sistematização do Debate</strong></h4>
-                    <p>O Marco Civil da Internet, Lei 12.965/14, estabelece princípios, garantias, direitos e deveres dos usuários da Internet no Brasil, sendo a primeira lei construída de forma colaborativa entre Governo e sociedade utilizando a internet como plataforma de debate.</p>                    
+                    <p>Depois de três meses de debate sobre a regulamentação do Marco Civil da Internet, é hora de sistematizar as opiniões enviadas pela plataforma on-line e elaborar uma minuta do texto do decreto.
+                        As contribuições poderão ser usadas como subsídio para a versão final do Ministério a ser encaminhado para a deliberação da Presidência da República.</p>
                 </div>
                 <div>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sistematizacao-marcocivil.png" class="img-adptive"

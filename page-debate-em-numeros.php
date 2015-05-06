@@ -79,8 +79,8 @@
                 </div>
                 <div class="col-md-6 text-left font-roboto">
                     <p class="mt-md h3"><strong class="red h1">339 </strong>pautas criadas</p>
-                    <p class="mt-md h3">Durante <strong class="red h1">90 </strong>dias de debate</p>
-                    <p class="mt-md h3"><strong class="red h1">1200 </strong>comentários</p>
+                    <p class="mt-md h3">Durante <strong class="red h1">82 </strong>dias de debate</p>
+                    <p class="mt-md h3"><strong class="red h1">1109 </strong>comentários</p>
                 </div>
             </div>
         </div>
@@ -113,10 +113,9 @@
                         <div class="text-center">
                             <i class="fa fa-facebook fa-5x"></i>
                         </div>
-                        <div class="mt-md">
-                            <p class="mt-md h3"><strong class="red h1 font-roboto">1200 </strong>seguidores</p>
-                            <p class="mt-md h3"><strong class="red h1 font-roboto">1200 </strong>seguidores</p>
-                            <p class="mt-md h3"><strong class="red h1 font-roboto">1200 </strong>seguidores</p>
+                        <div class="mt-md text-center">
+                            <p class="mt-md h3"><strong class="red h1 font-roboto">1511 </strong>seguidores</p>
+                            <p class="mt-md h3">Alcance de <strong class="red h1 font-roboto">50 mil</strong> pessoas</p>
                         </div>
                     </div>
                 </div>
@@ -125,10 +124,9 @@
                         <div class="text-center">
                             <i class="fa fa-twitter fa-5x"></i>
                         </div>
-                        <div class="mt-md">
-                            <p class="mt-md h3"><strong class="red h1 font-roboto">1200 </strong>seguidores</p>
-                            <p class="mt-md h3"><strong class="red h1 font-roboto">1200 </strong>seguidores</p>
-                            <p class="mt-md h3"><strong class="red h1 font-roboto">1200 </strong>seguidores</p>
+                        <div class="mt-md text-center">
+                            <p class="mt-md h3"><strong class="red h1 font-roboto">4978 </strong>seguidores</p>
+                            <p class="mt-md h3"><strong class="red h1 font-roboto">91 mil </strong>impressões</p>
                         </div>
                     </div>
                 </div>
@@ -137,10 +135,10 @@
                         <div class="text-center">
                             <i class="fa fa-youtube fa-5x"></i>
                         </div>
-                        <div class="mt-md">
-                            <p class="mt-md h3"><strong class="red h1 font-roboto">1200 </strong>seguidores</p>
-                            <p class="mt-md h3"><strong class="red h1 font-roboto">1200 </strong>seguidores</p>
-                            <p class="mt-md h3"><strong class="red h1 font-roboto">1200 </strong>seguidores</p>
+                        <div class="mt-md text-center">
+                            <p class="mt-md h3"><strong class="red h1 font-roboto">20 </strong>vídeos</p>
+                            <p class="mt-md h3"><strong class="red h1 font-roboto">141 mil </strong>curtidas</p>
+                            <p class="mt-md h3"><strong class="red h1 font-roboto">23 mil </strong>compartilhamentos</p>
                         </div>
                     </div>
                 </div>

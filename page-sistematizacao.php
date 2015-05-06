@@ -16,7 +16,7 @@
                         <li><a href="#como-participar">Como participar?</a></li>
                         <li><a href="#ferramentas-de-colaboracao">Ferramentas de colaboração</a></li>
                         <li><a href="#eixos-do-debate">Eixos do debate</a></li>
-                        <li><a href="#envie-seu-decreto">Envie seu decreto</a></li>
+                        <li><a href="#envie-seu-decreto">Envie sua proposta de sistematização</a></li>
                     </ul>
                 </div>
             </div>
@@ -25,9 +25,10 @@
     <div class="container">
         <div class="oque clearfix mt-lg">
             <div class="ml-md col-md-6">
-                <h2 id="o-que-e" class="font-roboto red h1">O que é?</h2>
+                <h2 id="o-que-e" class="font-roboto red h1">O que é sistematização?</h2>
                 <p>Depois de três meses de debate sobre a regulamentação do Marco Civil da Internet, é hora de sistematizar as opiniões enviadas pela plataforma on-line e elaborar uma minuta do texto do decreto. </p>
                 <p>E a Secretaria de Assuntos Legislativos (SAL) do Ministério da Justiça (MJ) abre mais uma vez espaço para a participação social. Qualquer pessoa, instituição, empresa ou órgão governamental pode mandar sua proposta.</p>
+                <p>As contribuições poderão ser usadas como subsídio para a versão final do Ministério a ser encaminhado para a deliberação da Presidência da República.</p>
             </div>
             <div class="col-md-5 text-center">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cubo.jpg" class="img-adptive"
@@ -40,9 +41,11 @@
             <div class="row">
                 <div class="ml-md col-md-6">
                     <h2 id="como-participar" class="font-roboto red h1">Como participar</h2>
-                    <p class="mt-md">Procure qualificar o texto com bons argumentos. Opiniões com maior adesão não necessariamente estarão na versão final do Ministério da Justiça nem precisam ser consideradas pelo proponente da sistematização. </p>
-                    <p>As propostas de texto devem ser feitas a partir das contribuições recebidas durante o debate público on-line e conter justificativas das escolhas do texto. As sugestões de decreto serão recebidas até 31 de maio pelo botão abaixo. O material enviado poderá ser disponibilizado nesta página depois dessa data.</p>
-                    <p>Para auxiliar a produção das propostas, disponibilizamos abaixo um modelo de estrutura de decreto, além de normas relevantes.</p>
+                    <p class="mt-md">
+                        Procure qualificar o texto com bons argumentos e que busquem atender da melhor forma o interesse público levando sempre em consideração os limites do que pode ser tratado em um decreto. Opiniões com maior adesão não necessariamente estarão na versão final do Ministério da Justiça nem precisam vincular o proponente da sistematização.  </p>
+                    <p>
+                        As propostas de texto devem ser feitas a partir das contribuições recebidas durante o debate público on-line e conter justificativas das escolhas do texto. As sugestões de decreto serão recebidas até 31 de maio pelo botão abaixo. O material enviado poderá ser disponibilizado nesta página depois dessa data.
+                    </p>
                 </div>
                 <div class="col-md-5 menu-participar">
                     <ul class="list-unstyled">
@@ -51,7 +54,7 @@
                             <p><small>Pautas e comentários ( em fomato “.csv”)</small></p>
                         </li>
                         <li><a target="_blank" href="http://participacao.mj.gov.br/marcocivil/pauta">Histórico online</a></li>
-                        <li><a href="#envie-seu-decreto">Envie seu decreto</a></li>
+                        <li><a href="#envie-seu-decreto">Envie sua proposta de sistematização</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,7 +73,7 @@
                 <div class="col-md-6">
                     <h4 class="font-roboto red">Hypothes.is</h4>
                     <p class="mt-sm"><small><a href="https://hypothes.is/" target="_blank">hypothes.is</a></small></p>
-                    <p>É uma plataforma para discussão. Permite postar comentários a cada frase de outro membro da equipe e fazer anotações em qualquer tipo de conteúdo.</p>
+                    <p>O hypothes.is é um software utilizado para anotar qualquer conteúdo na internet. Nele você pode selecionar trechos de texto, marcar e anotar comentários e palavras-chave (tags). Você também poderá compartilhar suas anotações com outros usuários e usuárias e responder a outras anotações feitas. A ferramenta de pesquisa permite a busca de conteúdo por palavra-chave, entre outros parâmetros.</p>
                 </div>
             </div>
             <div class="row divider-top">
@@ -106,13 +109,17 @@
             </div>
             <div class="row">
                 <div class="confira text-center">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <p class="h4"><a href="http://participacao.mj.gov.br/marcocivil/wp-content/uploads/sites/2/2015/05/pautas-comentarios.zip" class="red font-roboto"><strong>Download do histórico do debate<strong></a></p>
                         <p><small>Pautas e comentários ( em fomato “.csv”)</small></p>
                     </div>
-                    <div class="col-md-5 divider-left">
+                    <div class="col-md-4 divider-left divider-right">
                         <p class="h4"><a href="http://participacao.mj.gov.br/marcocivil/pauta" target="_blank" class="red font-roboto"><strong>Veja todo o histórico do debate online<strong></a></p>
                         <p><small>Confira como foi a interação na plataforma</small></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="h4"><a href="http://participacao.mj.gov.br/marcocivil/debate-em-numeros" target="_blank" class="red font-roboto"><strong>Debate em números<strong></a></p>
+                        <p><small>Dados estatísticos de interação com a plataforma</small></p>
                     </div>
                 </div>
             </div>
@@ -122,9 +129,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h4 id="envie-seu-decreto" class="font-roboto red h1">Envie seu decreto e justificativas</h4>
+                    <h4 id="envie-seu-decreto" class="font-roboto red h1">Envie sua proposta de sistematização que inclua a minuta de decreto e justificativas</h4>
                     <p>Aqui você faz o upload da sua proposta de decreto para regulamentar o Marco Civil da Internet.</p>
-                    <p>As contribuições poderão ser usadas como subsídio para a versão final do Ministério a ser encaminhado para a deliberação da Presidência da República.
+                    <p>As contribuições poderão ser usadas como subsídio para a versão final do Ministério a ser encaminhado para a deliberação da Presidência da República.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="form-envie">
