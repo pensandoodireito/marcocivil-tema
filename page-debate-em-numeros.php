@@ -17,11 +17,11 @@
             <div class="col-md-3">
                 <div class="well well-sm">
                     <div class="row">
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/privacidade-na-rede.png" class="img-adptive">
                         </div>
                         <div class="col-md-8">
-                            <p class="font-roboto red h1 text-center">68</p>
+                            <p class="font-roboto red h1">68</p>
                             <p><strong>Privacidade na rede</strong></p>
                         </div>
                     </div>
@@ -30,11 +30,11 @@
             <div class="col-md-3">
                 <div class="well well-sm">
                     <div class="row">
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/registros-de-acesso.png" class="img-adptive">
                         </div>
                         <div class="col-md-8">
-                            <p class="font-roboto red h1 text-center">70</p>
+                            <p class="font-roboto red h1">70</p>
                             <p><strong>Registros de acesso</strong></p>
                         </div>
                     </div>
@@ -43,11 +43,11 @@
             <div class="col-md-3">
                 <div class="well well-sm">
                     <div class="row">
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/neutralidade.png" class="img-adptive">
                         </div>
                         <div class="col-md-8">
-                            <p class="font-roboto red h1 text-center">98</p>
+                            <p class="font-roboto red h1">98</p>
                             <p><strong>Neutralidade</strong></p>
                         </div>
                     </div>
@@ -56,11 +56,11 @@
             <div class="col-md-3">
                 <div class="well well-sm">
                     <div class="row">
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/temas/outros-temas-e-consideracoes.png" class="img-adptive">
                         </div>
                         <div class="col-md-8">
-                            <p class="font-roboto red h1 text-center">124</p>
+                            <p class="font-roboto red h1">124</p>
                             <p><strong>Outros temas</strong></p>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
     <div class="mapas">
         <div class="container">
             <div class="row text-center">
-                <h3 class="h1 red font-roboto">Localização dos participantes</h3>
+                <h3 class="h1 white font-roboto">Localização dos participantes</h3>
             </div>
             <div class="row mt-md">
                 <div class="col-md-12 text-center">
