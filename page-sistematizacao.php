@@ -171,4 +171,7 @@
         </div>
     </div>
 </div>
+<div class="back-to-top">
+    <a href="#" class="white"><i class="fa fa-level-up"></i> Voltar para o topo</a>
+</div>
 <?php get_footer(); ?>
