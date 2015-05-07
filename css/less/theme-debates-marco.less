@@ -191,7 +191,7 @@ div.mce-panel {
     }
     .emnumeros {
         .margin-padding-default();
-        background:  url("../images/bck-numeros.jpg") repeat #0e6490;
+        background: url("../images/bck-numeros.jpg") repeat #0e6490;
         color: #fff;
         a {
             color: #fff;
@@ -199,10 +199,10 @@ div.mce-panel {
                 color: #fff;
             }
         }
-        .exnume{
+        .exnume {
             background-color: rgba(255, 255, 255, 0.2);
             text-align: right;
-            padding:20px;
+            padding: 20px;
             @media(max-width: @screen-md) {
                 margin: 20px;
                 text-align: center;
@@ -228,6 +228,20 @@ div.mce-panel {
     .mapas {
         .margin-padding-default();
         background-color: #779aac;
+        #grafico-paises {
+            path {
+                stroke-width: 1;
+                /* Controla a largura da linha que separa os países */
+                
+                stroke: #779aac;
+                /* Seta a cor da borda */
+                
+                &:hover {
+                    stroke-width: 2;
+                    stroke: #f8a19c;
+                }
+            }
+        }
     }
     .palavras {
         .margin-padding-default();
