@@ -12,11 +12,11 @@
                 </div>
                 <div class="sist-menu col-md-offset-6 col-md-5">
                     <ul class="list-unstyled">
-                        <li><a href="#o-que-e">O que é sistematização?</a></li>
-                        <li><a href="#como-participar">Como participar?</a></li>
-                        <li><a href="#ferramentas-de-colaboracao">Ferramentas de colaboração</a></li>
-                        <li><a href="#eixos-do-debate">Eixos do debate</a></li>
-                        <li><a href="#envie-seu-decreto">Envie sua proposta de sistematização</a></li>
+                        <li><a href="#o-que-e" class="smoothscroll">O que é sistematização?</a></li>
+                        <li><a href="#como-participar" class="smoothscroll">Como participar?</a></li>
+                        <li><a href="#ferramentas-de-colaboracao" class="smoothscroll">Ferramentas de colaboração</a></li>
+                        <li><a href="#eixos-do-debate" class="smoothscroll">Eixos do debate</a></li>
+                        <li><a href="#envie-seu-decreto" class="smoothscroll">Envie sua proposta de sistematização</a></li>
                         <li><small class="fontsize-md yellow">Conheça também:</small><br><a href="/marcocivil/debate-em-numeros">O debate em números</a></li>
                     </ul>
                 </div>
