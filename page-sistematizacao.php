@@ -17,7 +17,7 @@
                         <li><a href="#ferramentas-de-colaboracao">Ferramentas de colaboração</a></li>
                         <li><a href="#eixos-do-debate">Eixos do debate</a></li>
                         <li><a href="#envie-seu-decreto">Envie sua proposta de sistematização</a></li>
-                        <li><small class="fontsize-md yellow">Conheça também:</small><br><a href="http://participacao.mj.gov.br/marcocivil/debate-em-numeros">O debate em números</a></li>
+                        <li><small class="fontsize-md yellow">Conheça também:</small><br><a href="/marcocivil/debate-em-numeros">O debate em números</a></li>
                     </ul>
                 </div>
             </div>
@@ -51,10 +51,10 @@
                 <div class="col-md-5 menu-participar">
                     <ul class="list-unstyled">
                         <li>
-                            <a href="http://participacao.mj.gov.br/marcocivil/wp-content/uploads/sites/2/2015/05/pautas-comentarios.zip" class="red">Download do histórico</a>
+                            <a href="/marcocivil/wp-content/uploads/sites/2/2015/05/pautas-comentarios.zip" class="red">Download do histórico</a>
                             <p><small>Pautas e comentários ( em fomato “.csv”)</small></p>
                         </li>
-                        <li><a target="_blank" href="http://participacao.mj.gov.br/marcocivil/pauta">Histórico online</a></li>
+                        <li><a target="_blank" href="/marcocivil/pauta">Histórico online</a></li>
                         <li><a href="#envie-seu-decreto">Envie sua proposta de sistematização</a></li>
                     </ul>
                 </div>
@@ -111,15 +111,15 @@
             <div class="row">
                 <div class="confira text-center">
                     <div class="col-md-4 divider">
-                        <p class="h4"><a href="http://participacao.mj.gov.br/marcocivil/wp-content/uploads/sites/2/2015/05/pautas-comentarios.zip" class="red font-roboto"><strong>Download do histórico do debate</strong></a></p>
+                        <p class="h4"><a href="/marcocivil/wp-content/uploads/sites/2/2015/05/pautas-comentarios.zip" class="red font-roboto"><strong>Download do histórico do debate</strong></a></p>
                         <p><small>Pautas e comentários ( em fomato “.csv”)</small></p>
                     </div>
                     <div class="col-md-4 divider">
-                        <p class="h4"><a href="http://participacao.mj.gov.br/marcocivil/pauta" target="_blank" class="red font-roboto"><strong>Veja todo o histórico do debate online</strong></a></p>
+                        <p class="h4"><a href="/marcocivil/pauta" target="_blank" class="red font-roboto"><strong>Veja todo o histórico do debate online</strong></a></p>
                         <p><small>Confira como foi a interação na plataforma</small></p>
                     </div>
                     <div class="col-md-4">
-                        <p class="h4"><a href="http://participacao.mj.gov.br/marcocivil/debate-em-numeros" target="_blank" class="red font-roboto"><strong>Debate em números</strong></a></p>
+                        <p class="h4"><a href="/marcocivil/debate-em-numeros" target="_blank" class="red font-roboto"><strong>Debate em números</strong></a></p>
                         <p><small>Dados estatísticos de interação com a plataforma</small></p>
                     </div>
                 </div>
@@ -151,17 +151,17 @@
     <div class="emnumeros">
         <div class="container">
             <div class="col-md-3 text-center">
-                <a href="http://participacao.mj.gov.br/marcocivil/debate-em-numeros">
+                <a href="/marcocivil/debate-em-numeros">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-half-branca.png" class="img-adptive"
                     alt="Logo: Marco Civil da Internet - O debate em números">
                 </a>
-                <a href="http://participacao.mj.gov.br/marcocivil/debate-em-numeros">
+                <a href="/marcocivil/debate-em-numeros">
                     <p class="white font-roboto h4"><strong>O debate em números</strong></p>
                 </a>
             </div>
             <div class="col-md-6">
                 <p class="mt-lg fontsize-lg">Veja quantos participaram, como foi a evolução do debate, e também como foi a fase anterior ao processo de regulamentação.</p>
-                <p><a href="http://participacao.mj.gov.br/marcocivil/debate-em-numeros" class="btn btn-info font-roboto fontsize-lg">Confira!</a></p>
+                <p><a href="/marcocivil/debate-em-numeros" class="btn btn-info font-roboto fontsize-lg">Confira!</a></p>
             </div>
             <div class="col-md-3 fontsize-lg exnume font-roboto">
                 <p class="mt-md"><strong class="h3">339 </strong>pautas criadas</p>
