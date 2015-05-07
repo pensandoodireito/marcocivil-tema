@@ -17,6 +17,7 @@
                         <li><a href="#ferramentas-de-colaboracao">Ferramentas de colaboração</a></li>
                         <li><a href="#eixos-do-debate">Eixos do debate</a></li>
                         <li><a href="#envie-seu-decreto">Envie sua proposta de sistematização</a></li>
+                        <li><small class="fontsize-md yellow">Conheça também:</small><br><a href="http://participacao.mj.gov.br/marcocivil/debate-em-numeros">O debate em números</a></li>
                     </ul>
                 </div>
             </div>
