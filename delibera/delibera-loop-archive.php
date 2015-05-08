@@ -1,14 +1,30 @@
 <?php
-if (isset($_REQUEST['filter_pauta'])) {
-    global $query_string;
-    query_posts( $query_string . '&s=' . $_REQUEST['filter_pauta'] );
-}
+  global $wp_query;
 
-if (have_posts()) :
-while (have_posts()) :
-the_post();
-$temas = wp_get_post_terms($post->ID, 'tema');
-$situacao = delibera_get_situacao($post->ID);
+  //Verifica se há alguma mudança no filtro de pautas por página
+  if (isset($_REQUEST['number-options'])) {
+    $posts_per_page = $_REQUEST['number-options'];
+  } else {
+    //Caso não haja, pega o valor da query,
+    // que tem por default 10 pautas por página
+    $posts_per_page = $wp_query->query_vars["posts_per_page"];
+  }
+  // adiciona posts por página aos argumentos da query
+  $args = array_merge( $wp_query->query_vars, array('posts_per_page' => $posts_per_page) );
+
+  //verifica se há algum 'filtro' do título da pauta
+  if (isset($_REQUEST['filter_pauta'])) {
+    $args = array_merge( $args, array('s' => $_REQUEST['filter_pauta']) );
+  }
+
+  // realiza a query
+  query_posts( $args );
+
+  if (have_posts()) :
+    while (have_posts()) :
+      the_post();
+      $temas = wp_get_post_terms($post->ID, 'tema');
+      $situacao = delibera_get_situacao($post->ID);
 ?>
 
 <div class="topic divider-bottom pb-md mt-md">
