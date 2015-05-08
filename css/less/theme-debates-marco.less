@@ -187,11 +187,38 @@ div.mce-panel {
             box-shadow: 0px 2px 10px -4px rgba(50, 50, 50, 1);
             margin: 20px;
             border: 1px solid #c7c5c7;
+            input, button, select, textarea {
+                width: 100% !important;
+            }
+            input[type="submit"] {
+                display: inline-block;
+                margin-bottom: 0;
+                font-weight: normal;
+                text-align: center;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                background-image: none;
+                border: 1px solid transparent;
+                white-space: nowrap;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                border-radius: 4px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                color: #fff;
+                background-color: #5bc0de;
+                border-color: #46b8da;
+            }
         }
     }
     .emnumeros {
         .margin-padding-default();
-        background:  url("../images/bck-numeros.jpg") repeat #0e6490;
+        background: url("../images/bck-numeros.jpg") repeat #0e6490;
         color: #fff;
         a {
             color: #fff;
@@ -199,10 +226,10 @@ div.mce-panel {
                 color: #fff;
             }
         }
-        .exnume{
+        .exnume {
             background-color: rgba(255, 255, 255, 0.2);
             text-align: right;
-            padding:20px;
+            padding: 20px;
             @media(max-width: @screen-md) {
                 margin: 20px;
                 text-align: center;
