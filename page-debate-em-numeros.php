@@ -111,7 +111,7 @@
                 <div class="col-md-4">
                     <div class="well well-sm">
                         <div class="text-center">
-                            <i class="fa fa-facebook fa-5x"></i>
+                            <a href="https://www.facebook.com/marcocivildainternet" class="red" target="_blank"><i class="fa fa-facebook fa-5x"></i></a>
                         </div>
                         <div class="mt-md text-center">
                             <p class="mt-md h3"><strong class="red h1 font-roboto">1511 </strong>seguidores</p>
@@ -122,7 +122,7 @@
                 <div class="col-md-4">
                     <div class="well well-sm">
                         <div class="text-center">
-                            <i class="fa fa-twitter fa-5x"></i>
+                            <a href="https://twitter.com/marcocivil" class="red" target="_blank"><i class="fa fa-twitter fa-5x"></i></a>
                         </div>
                         <div class="mt-md text-center">
                             <p class="mt-md h3"><strong class="red h1 font-roboto">4978 </strong>seguidores</p>
@@ -133,7 +133,7 @@
                 <div class="col-md-4">
                     <div class="well well-sm">
                         <div class="text-center">
-                            <i class="fa fa-youtube fa-5x"></i>
+                            <a href="https://www.youtube.com/channel/UCXmOfwYGhUJY9q0y0KBBdGw" class="red" target="_blank"><i class="fa fa-youtube fa-5x"></i></a>
                         </div>
                         <div class="mt-md text-center">
                             <p class="mt-md h3"><strong class="red h1 font-roboto">20 </strong>vídeos</p>
