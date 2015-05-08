@@ -3,22 +3,17 @@
 
   //Verifica se há alguma mudança no filtro de pautas por página
   if (isset($_REQUEST['number-options'])) {
-    $posts_per_page = $_REQUEST['number-options'];
-  } else {
-    //Caso não haja, pega o valor da query,
-    // que tem por default 10 pautas por página
-    $posts_per_page = $wp_query->query_vars["posts_per_page"];
+      // adiciona posts por página aos argumentos da query
+      $wp_query->set('posts_per_page', $_REQUEST['number-options']);
   }
-  // adiciona posts por página aos argumentos da query
-  $args = array_merge( $wp_query->query_vars, array('posts_per_page' => $posts_per_page) );
 
   //verifica se há algum 'filtro' do título da pauta
   if (isset($_REQUEST['filter_pauta'])) {
-    $args = array_merge( $args, array('s' => $_REQUEST['filter_pauta']) );
+      $wp_query->set('s', $_REQUEST['filter_pauta']);
   }
 
   // realiza a query
-  query_posts( $args );
+  query_posts( $wp_query->query_vars );
 
   if (have_posts()) :
     while (have_posts()) :
