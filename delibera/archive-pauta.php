@@ -88,13 +88,15 @@ $archive_tema = true;
                             <h4 class="font-roboto red"><strong>Lista de pautas sendo discutidas nesse tema</strong></h4>
                         </div>
                         <div class="col-sm-3 fontsize-sm">
-                            <select class="form-control" title="Pautas a serem exibidas por página">
-                                <option selected>Pautas por página:</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <label>Pautas por página</label>
+                            <select class="form-control" title="Pautas a serem exibidas por página" name="number-options" onChange="jQuery('form').submit();">
+                                <option <?php if (isset($_REQUEST['number-options']) && $_REQUEST['number-options'] == "5")  { echo 'selected'; }?> value="5">5</option>
+                                <option <?php if ((isset($_REQUEST['number-options']) && $_REQUEST['number-options'] == "10") || !isset($_REQUEST['number-options'])) { echo 'selected'; }?> value="10">10</option>
+                                <option <?php if (isset($_REQUEST['number-options']) && $_REQUEST['number-options'] == "20") { echo 'selected'; }?> value="20">20</option>
+                                <option <?php if (isset($_REQUEST['number-options']) && $_REQUEST['number-options'] == "30") { echo 'selected'; }?> value="30">30</option>
+                                <option <?php if (isset($_REQUEST['number-options']) && $_REQUEST['number-options'] == "40") { echo 'selected'; }?> value="40">40</option>
+                                <option <?php if (isset($_REQUEST['number-options']) && $_REQUEST['number-options'] == "50") { echo 'selected'; }?> value="50">50</option>
+                                <option <?php if (isset($_REQUEST['number-options']) && $_REQUEST['number-options'] == "100"){ echo 'selected'; }?> value="100">100</option>
                             </select>
                         </div>
                     </div>
@@ -113,7 +115,7 @@ $archive_tema = true;
                         <div id="lista-de-pautas" class="col-md-12 clearfix">
                             <?php load_template(dirname(__FILE__) . '/delibera-loop-archive.php', true); ?>
                             <?php
-                            global $wp_query;
+                            //global $wp_query;
                             $big = 99999999; // need an unlikely integer
                             $links = paginate_links(array(
                             'base' => str_replace($big, '%#%', get_pagenum_link($big)),

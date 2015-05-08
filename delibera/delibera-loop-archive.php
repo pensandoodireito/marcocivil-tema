@@ -1,14 +1,25 @@
 <?php
-if (isset($_REQUEST['filter_pauta'])) {
-    global $query_string;
-    query_posts( $query_string . '&s=' . $_REQUEST['filter_pauta'] );
-}
+  global $wp_query;
 
-if (have_posts()) :
-while (have_posts()) :
-the_post();
-$temas = wp_get_post_terms($post->ID, 'tema');
-$situacao = delibera_get_situacao($post->ID);
+  //Verifica se há alguma mudança no filtro de pautas por página
+  if (isset($_REQUEST['number-options'])) {
+      // adiciona posts por página aos argumentos da query
+      $wp_query->set('posts_per_page', $_REQUEST['number-options']);
+  }
+
+  //verifica se há algum 'filtro' do título da pauta
+  if (isset($_REQUEST['filter_pauta'])) {
+      $wp_query->set('s', $_REQUEST['filter_pauta']);
+  }
+
+  // realiza a query
+  query_posts( $wp_query->query_vars );
+
+  if (have_posts()) :
+    while (have_posts()) :
+      the_post();
+      $temas = wp_get_post_terms($post->ID, 'tema');
+      $situacao = delibera_get_situacao($post->ID);
 ?>
 
 <div class="topic divider-bottom pb-md mt-md">
