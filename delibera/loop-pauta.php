@@ -34,15 +34,16 @@
         <div class="btn-group">
           <button class="btn btn-default btn-sm dropdown-toggle red" type="button" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-chevron-down"></i>
           </button>
+          <?php $social_share_url = pensandoodireito_bitly_url(get_the_permalink()); ?>
           <ul class="dropdown-menu" role="menu">
             <li>
-              <a href="javascript:var socialw = window.open('https://www.facebook.com/sharer/sharer.php?u=<?php echo pensandoodireito_bitly_url(get_the_permalink()); ?>', 'socialw', 'width=470, height=250, location=no');" class="fontsize-sm text-muted"><i class="fa fa-facebook-square"></i> Facebook</a>
+              <a href="javascript:var socialw = window.open('https://www.facebook.com/sharer/sharer.php?u=<?php echo $social_share_url; ?>', 'socialw', 'width=470, height=250, location=no');" class="fontsize-sm text-muted"><i class="fa fa-facebook-square"></i> Facebook</a>
             </li>
             <li>
-              <a href="javascript:var socialw = window.open('http://www.twitter.com/share?url=<?php echo pensandoodireito_bitly_url(get_the_permalink()); ?>', 'socialw', 'width=470, height=280, location=no');" class="fontsize-sm text-muted"><i class="fa fa-twitter"></i> Twitter</a>
+              <a href="javascript:var socialw = window.open('http://www.twitter.com/share?url=<?php echo $social_share_url; ?>', 'socialw', 'width=470, height=280, location=no');" class="fontsize-sm text-muted"><i class="fa fa-twitter"></i> Twitter</a>
             </li>
             <li>
-              <a href="javascript:var socialw = window.open('https://plus.google.com/share?url=<?php echo pensandoodireito_bitly_url(get_the_permalink()); ?>', 'socialw', 'width=470, height=250, location=no');" class="fontsize-sm text-muted"><i class="fa fa-google-plus"></i> Google+</a>
+              <a href="javascript:var socialw = window.open('https://plus.google.com/share?url=<?php echo $social_share_url; ?>', 'socialw', 'width=470, height=250, location=no');" class="fontsize-sm text-muted"><i class="fa fa-google-plus"></i> Google+</a>
             </li>
             <li>
               <a href="#" class="fontsize-sm text-muted" id="delibera_seguir">
