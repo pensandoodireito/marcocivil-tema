@@ -268,6 +268,16 @@ div.mce-panel {
   margin: 20px 0;
   background-color: #779aac;
 }
+#marco-numeros .mapas #grafico-paises path {
+  stroke-width: 1;
+  /* Controla a largura da linha que separa os países */
+  stroke: #779aac;
+  /* Seta a cor da borda */
+}
+#marco-numeros .mapas #grafico-paises path:hover {
+  stroke-width: 2;
+  stroke: #f8a19c;
+}
 #marco-numeros .palavras {
   padding: 40px 0;
   margin: 20px 0;
