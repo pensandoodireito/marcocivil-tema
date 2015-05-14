@@ -169,11 +169,15 @@
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-comments-o fa-stack-1x blue"></i>
-                            </span> 
+                            </span>
                         <strong class="h1">1109 </strong>comentários</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <?php get_footer(); ?>
+</div>
+<div class="back-to-top">
+    <a href="#" class="white"><i class="fa fa-level-up"></i> Voltar para o topo</a>
+</div>
+<?php get_footer(); ?>

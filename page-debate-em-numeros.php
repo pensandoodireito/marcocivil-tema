@@ -299,7 +299,7 @@
               title: 'Quantidade de Pautas',
               minValue: 0
             },
-            
+
             vAxis: {
               title: 'Semana a partir de'
             }
@@ -321,4 +321,7 @@
         }
 </script>
 
+<div class="back-to-top">
+    <a href="#" class="white"><i class="fa fa-level-up"></i> Voltar para o topo</a>
+</div>
 <?php get_footer(); ?>
