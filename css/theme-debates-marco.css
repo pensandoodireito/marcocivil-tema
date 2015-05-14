@@ -258,7 +258,7 @@ div.mce-panel {
 #sistematizacao .emnumeros {
   padding: 40px 0;
   margin: 20px 0;
-  background: url("../images/bck-numeros.jpg") repeat #0e6490;
+  background-color: #0e6490;
   color: #fff;
 }
 #sistematizacao .emnumeros a {
