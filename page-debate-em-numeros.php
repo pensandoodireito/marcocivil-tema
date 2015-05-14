@@ -164,7 +164,7 @@
             </div>
             <div class="row mt-md">
                 <div class="col-md-12 text-center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nuvem-palavras.png" class="img-adptive">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nuvem-palavras.jpg" class="img-adptive">
                 </div>
             </div>
         </div>
