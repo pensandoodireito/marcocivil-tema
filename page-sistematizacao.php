@@ -145,30 +145,35 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <h4 class="font-roboto red h1">Conheça também:</h4>
-    </div>
     <div class="emnumeros">
         <div class="container">
-            <div class="col-md-3 text-center">
-                <a href="/marcocivil/debate-em-numeros">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-half-branca.png" class="img-adptive"
-                    alt="Logo: Marco Civil da Internet - O debate em números">
-                </a>
-                <a href="/marcocivil/debate-em-numeros">
-                    <p class="white font-roboto h4"><strong>O debate em números</strong></p>
-                </a>
-            </div>
-            <div class="col-md-6">
-                <p class="mt-lg fontsize-lg">Veja quantos participaram, como foi a evolução do debate, e também como foi a fase anterior ao processo de regulamentação.</p>
-                <p><a href="/marcocivil/debate-em-numeros" class="btn btn-info font-roboto fontsize-lg">Confira!</a></p>
-            </div>
-            <div class="col-md-3 fontsize-lg exnume font-roboto">
-                <p class="mt-md"><strong class="h3">339 </strong>pautas criadas</p>
-                <p class="mt-md">Durante <strong class="h3">82 </strong>dias de debate</p>
-                <p class="mt-md"><strong class="h3">1109 </strong>comentários</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <h4 class="font-roboto h1">Marco civil: O debate em números</h4>
+                    <p class="mt-lg fontsize-lg"><a href="/marcocivil/debate-em-numeros">Veja quantos participaram, como foi a evolução do debate, e também como foi a fase anterior ao processo de regulamentação.</a></p>
+                    <!--<p><a href="/marcocivil/debate-em-numeros" class="btn btn-info font-roboto fontsize-lg">Confira!</a></p>-->
+                </div>
+                <div class="col-md-4 fontsize-lg exnume font-roboto">
+                    <p class="mt-md">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-file-text-o  fa-stack-1x blue"></i>
+                        </span><strong class="h1"> 339 </strong>pautas criadas</p>
+                        <p class="mt-md">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-calendar fa-stack-1x blue"></i>
+                            </span>
+                         Durante <strong class="h1">82 </strong>dias de debate</p>
+                        <p class="mt-md">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-comments-o fa-stack-1x blue"></i>
+                            </span> 
+                        <strong class="h1">1109 </strong>comentários</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<?php get_footer(); ?>
+    <?php get_footer(); ?>
