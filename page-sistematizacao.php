@@ -42,11 +42,9 @@
             <div class="row">
                 <div class="ml-md col-md-6">
                     <h2 id="como-participar" class="font-roboto red h1">Como participar</h2>
-                    <p class="mt-md">
-                    Procure qualificar o texto com bons argumentos e que busquem atender da melhor forma o interesse público levando sempre em consideração os limites do que pode ser tratado em um decreto. Opiniões com maior adesão não necessariamente estarão na versão final do Ministério da Justiça nem precisam vincular o proponente da sistematização.  </p>
-                    <p>
-                        As propostas de texto devem ser feitas a partir das contribuições recebidas durante o debate público on-line e conter justificativas das escolhas do texto. As sugestões de decreto serão recebidas até 31 de maio pelo botão abaixo. O material enviado poderá ser disponibilizado nesta página depois dessa data.
-                    </p>
+                    <p class="mt-md">Para participar da fase de Sistematização, envie sugestões de texto de decreto, as quais devem ser feitas a partir das contribuições recebidas durante o debate público on-line e, preferencialemente, conter justificativas das escolhas do texto com a metodologia utilizada.  </p>
+                    <p class="mt-md">Procure qualificar seu texto com bons argumentos, que busquem atender da melhor forma o interesse público levando sempre em consideração os limites do que pode ser tratado em um decreto e lembre-se: o conteúdo é de sua responsabilidade, ressaltando que opiniões recorrentes ou com maior adesão não necessariamente estarão no texto que será proposto pelo Ministério da Justiça, nem precisam vincular o proponente da sistematização. </p>
+                    <p class="mt-md"><a href="http://www4.planalto.gov.br/legislacao/legislacao-1/decretos1/2015-decretos#content" target="_blank">Veja alguns exemplos para criar seu decreto</a>. Siga a formatação e organização destes exemplos As sugestões de decreto serão recebidas até 31 de maio pelo botão abaixo. O material enviado poderá ser disponibilizado nesta página depois dessa data. </p>
                 </div>
                 <div class="col-md-5 menu-participar">
                     <ul class="list-unstyled">
@@ -130,9 +128,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h4 id="envie-seu-decreto" class="font-roboto red h1">Envie sua proposta de sistematização que inclua a minuta de decreto e justificativas</h4>
-                    <p>Aqui você faz o upload da sua proposta de decreto para regulamentar o Marco Civil da Internet.</p>
+                    <h4 id="envie-seu-decreto" class="font-roboto red h1">Envie sua proposta!</h4>
+                    <p class="red"><strong>Mande sua proposta de sistematização que inclua a minuta de decreto e justificativas para regulamentar o Marco Civil da Internet.</strong></p>
                     <p>As contribuições poderão ser usadas como subsídio para a versão final do Ministério a ser encaminhado para a deliberação da Presidência da República.</p>
+                    <p>Para ajudar: <a href="http://www.planalto.gov.br/ccivil_03/leis/lcp/lcp95.htm" target="_blank"><strong>veja esta lei</strong></a> e <a href="http://www.planalto.gov.br/ccivil_03/decreto/2002/D4176.htm" target="_blank"><strong>este decreto</strong></a></p>
                 </div>
                 <div class="col-md-6">
                     <div class="form-envie">
