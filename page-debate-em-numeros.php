@@ -152,7 +152,8 @@
             </div>
             <div class="row mt-md">
                 <div class="col-md-12 text-center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/grafico-mapa.png" class="img-adptive">
+                    <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/grafico-mapa.png" class="img-adptive">-->
+                    <div id="grafico-paises"></div>
                 </div>
             </div>
         </div>
@@ -170,4 +171,96 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['País', 'Visitas'],
+            ["Brasil",41885],
+            ["Estados Unidos",503],
+            ["Índia",146],
+            ["Reino Unido",87],
+            ["Alemanha",81],
+            ["Canadá",70],
+            ["Portugal",44],
+            ["França",38],
+            ["Argentina",37],
+            ["Itália",33],
+            ["Espanha",20],
+            ["Holanda",17],
+            ["Israel",16],
+            ["Japão",15],
+            ["Angola",13],
+            ["Irlanda",12],
+            ["Suíça",10],
+            ["Colômbia",10],
+            ["México",10],
+            ["Bélgica",9],
+            ["Chile",8],
+            ["Áustria",7],
+            ["Peru",5],
+            ["Bolívia",4],
+            ["Equador",4],
+            ["Quênia",4],
+            ["Paraguai",4],
+            ["Uruguai",4],
+            ["África do Sul",4],
+            ["Emirados Árabes Unidos",3],
+            ["Austrália",3],
+            ["China",3],
+            ["Hong Kong",3],
+            ["Indonésia",3],
+            ["nova Zelândia",3],
+            ["Filipinas",3],
+            ["Romênia",3],
+            ["Rússia",3],
+            ["Tunísia",3],
+            ["Turquia",3],
+            ["Venezuela",3],
+            ["Guiana Francesa",2],
+            ["Hungria",2  ],
+            ["Nicarágua",2],
+            ["Suécia",2],
+            ["Benin",1],
+            ["Costa Rica",1],
+            ["Cabo Verde",1],
+            ["Dinamarca",1],
+            ["Estônia",1],
+            ["Finlândia",1],
+            ["Haiti",1],
+            ["Islândia",1],
+            ["Camboja",1],
+            ["Polônia",1],
+            ["Arábia Saudita",1],
+            ["Trinidad & Tobago",1],
+            ["Taiwan",1],
+            ["Ucrânia",1]
+        ]);
+
+        var options = {
+            colorAxis: {colors: ['#521e1b', '#bc3f38']},
+            backgroundColor: '#779aac'
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('grafico-paises'));
+
+        chart.draw(data, options);
+        // faz o mapa ficar responsivo
+        function resizeHandler () {
+                chart.draw(data, options);
+            }
+            if (window.addEventListener) {
+                window.addEventListener('resize', resizeHandler, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onresize', resizeHandler);
+            }
+      };
+    </script>
+
 <?php get_footer(); ?>
