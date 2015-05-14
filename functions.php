@@ -61,32 +61,32 @@ add_action( 'add_meta_boxes', 'add_custom_box_wpse_82317' );
 function save_comment_wpse_82317( $location, $comment_id )
 {
     // Not allowed, return regular value without updating meta
-    if ( !wp_verify_nonce( $_POST['noncename_wpse_82317'], plugin_basename( __FILE__ ) ) 
-        && !isset( $_POST['meta_comment_field'] ) 
-        ) 
+    if ( !wp_verify_nonce( $_POST['noncename_wpse_82317'], plugin_basename( __FILE__ ) )
+        && !isset( $_POST['meta_comment_field'] )
+        )
         return $location;
 
     // Convert text field into array splitted by comma
-    $tags = array_map( 'trim', explode(',', $_POST['meta_tag_field']) ); 
-    $tags = array_map( 'sanitize_text_field', $tags); 
+    $tags = array_map( 'trim', explode(',', $_POST['meta_tag_field']) );
+    $tags = array_map( 'sanitize_text_field', $tags);
 
     // Update meta
-    update_comment_meta( 
-        $comment_id, 
-        'meta_tag_field', 
-        implode(',', $tags) 
+    update_comment_meta(
+        $comment_id,
+        'meta_tag_field',
+        implode(',', $tags)
     );
 
-    // Return regular value after updating  
+    // Return regular value after updating
     return $location;
 }
 
 /**
- * Add Comment meta box 
+ * Add Comment meta box
  */
-function add_custom_box_wpse_82317() 
+function add_custom_box_wpse_82317()
 {
-    add_meta_box( 
+    add_meta_box(
         'section_id_wpse_82317',
         __( 'Tags' ),
         'inner_custom_box_wpse_82317',
@@ -97,15 +97,28 @@ function add_custom_box_wpse_82317()
 }
 
 /**
- * Render meta box with Custom Field 
+ * Render meta box with Custom Field
  */
-function inner_custom_box_wpse_82317( $comment ) 
+function inner_custom_box_wpse_82317( $comment )
 {
     // Use nonce for verification
     wp_nonce_field( plugin_basename( __FILE__ ), 'noncename_wpse_82317' );
 
     $c_meta = get_comment_meta( $comment->comment_ID, 'meta_tag_field', true );
-    echo "<input type='text' id='meta_tag_field' name='meta_tag_field' value='", 
-        esc_attr( $c_meta ), 
+    echo "<input type='text' id='meta_tag_field' name='meta_tag_field' value='",
+        esc_attr( $c_meta ),
         "' size='25' />";
 }
+
+// Função que cria páginas (pages),
+//   em especial focando nos 'endpoints'
+function mc_create_pages() {
+      //cria página 'sistematização'
+      pd_create_page( array('titulo'=> 'Sistematização') );
+      //cria a página 'Debate em Números'
+      pd_create_page( array('titulo'=> 'Debate em Números') );
+}
+
+// Chama a função apenas quando há troca de tema
+//   fundamentalmente quando o tema é ativado (e também desativado)
+add_action('after_switch_theme', 'mc_create_pages');
