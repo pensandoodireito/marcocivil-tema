@@ -74,11 +74,12 @@
                 <h3 class="h1 red font-roboto">Criação de pautas ao longo dos debates</h3>
             </div>
             <div class="row mt-md">
-                <div class="col-md-6">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/grafico-pautas.png" class="img-adptive">
+                <div class="col-md-8">
+                    <div id="grafico-pautas" class="line-7"></div>
+                    <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/grafico-pautas.png" class="img-adptive">-->
                 </div>
-                <div class="col-md-6 text-left font-roboto">
-                    <p class="mt-md h3"><strong class="red h1">339 </strong>pautas criadas</p>
+                <div class="col-md-4 text-left font-roboto">
+                    <p class="mt-lg h3"><strong class="red h1">339 </strong>pautas criadas</p>
                     <p class="mt-md h3">Durante <strong class="red h1">82 </strong>dias de debate</p>
                     <p class="mt-md h3"><strong class="red h1">1109 </strong>comentários</p>
                 </div>
@@ -262,5 +263,62 @@
             }
       };
     </script>
+
+
+<script type="text/javascript">
+    google.load('visualization', '1', {packages: ['corechart', 'bar']});
+    google.setOnLoadCallback(drawBasic);
+
+    function drawBasic() {
+
+          var data = google.visualization.arrayToDataTable([
+            ['Semana', 'Quantidade'],
+            ["05/02/15",40  ],
+            ["11/02/15",54  ],
+            ["19/02/15",56  ],
+            ["25/02/15",69  ],
+            ["28/02/15",76  ],
+            ["05/03/15",76  ],
+            ["11/03/15",80  ],
+            ["18/03/15",99  ],
+            ["25/03/15",131  ],
+            ["31/03/15",292  ],
+            ["01/04/15",308  ],
+            ["08/04/15",308  ],
+            ["15/04/15",320  ],
+            ["22/04/15",322  ],
+            ["27/04/15",333  ],
+            ["29/04/15",341  ],
+            ["04/05/15",360  ]
+          ]);
+
+          var options = {
+            title: 'Criação de pautas por semana',
+            //chartArea: {width: '50%'},
+            hAxis: {
+              title: 'Quantidade de Pautas',
+              minValue: 0
+            },
+            
+            vAxis: {
+              title: 'Semana a partir de'
+            }
+          };
+
+          var chart = new google.visualization.BarChart(document.getElementById('grafico-pautas'));
+
+          chart.draw(data, options);
+          // faz o mapa ficar responsivo
+        function resizeHandler () {
+                chart.draw(data, options);
+            }
+            if (window.addEventListener) {
+                window.addEventListener('resize', resizeHandler, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onresize', resizeHandler);
+            }
+        }
+</script>
 
 <?php get_footer(); ?>
