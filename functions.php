@@ -122,3 +122,12 @@ function mc_create_pages() {
 // Chama a função apenas quando há troca de tema
 //   fundamentalmente quando o tema é ativado (e também desativado)
 add_action('after_switch_theme', 'mc_create_pages');
+
+add_action('wp_footer', 'marcocivil_anotacoes_sistematizacao');
+function marcocivil_anotacoes_sistematizacao() {
+    if ($_SERVER['QUERY_STRING'] == "anotar") {
+?>
+    <script src="<?php echo ANOTATION_SERVER; ?>/embed.js"></script>
+<?php
+    }
+}
