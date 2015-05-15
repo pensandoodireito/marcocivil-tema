@@ -209,7 +209,7 @@
         margin: 10px 0;
         padding: 10px;
         border: 1px solid #D3D3D3;
-
+        list-style-type: none;
     }
     #comments .comment-form-comment label {
         margin-right: 20px;
@@ -224,14 +224,17 @@
     }
 
 /* dentro da listagem */
-#comments .commentlist .comment-respond{
-    margin:10px 50px;
-    padding-top: 10px;
-    border-top:1px solid #ccc;
-}
+    #comments .commentlist .comment-respond {
+        margin: 10px 50px;
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+    }
+
+    #comments ol.commentlist {
+        padding: 10px;
+    }
 
 /* fora da listagem */
-
 #comments .comment-respond{
     border-top:1px solid #ccc;
     margin:20px 50px;
