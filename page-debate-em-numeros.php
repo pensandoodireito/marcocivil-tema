@@ -96,11 +96,9 @@
                     <div class="timeline-badge danger"><h3 class="white font-roboto">1ª</h3></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title font-roboto red">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted">0000 comentários</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </p>
+                            <h4 class="timeline-title font-roboto red">A privacidade e a segurança do usuário</h4>
+                            <p>Criado por: jessicaoac</p>
+                            <p><small class="text-muted">33 comentários em Privacidade na rede</small></p>
                         </div>
                     </div>
                 </li>
@@ -108,11 +106,9 @@
                     <div class="timeline-badge danger"><h3 class="white font-roboto">2ª</h3></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title font-roboto red">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted">0000 comentários</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </p>
+                            <h4 class="timeline-title font-roboto red">A internet como fator de inclusão</h4>
+                            <p>Criado por: jessicaoac</p>
+                            <p><small class="text-muted">27 comentários em Outros temas e considerações</small></p>
                         </div>
                     </div>
                 </li>
@@ -120,11 +116,9 @@
                     <div class="timeline-badge danger"><h3 class="white font-roboto">3ª</h3></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title font-roboto red">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted">0000 comentários</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </p>
+                            <h4 class="timeline-title font-roboto red">Neutralidade da rede e os e-mails</h4>
+                            <p>Criado por: jessicaoac</p>
+                            <p><small class="text-muted">26 comentários em Neutralidade</small></p>
                         </div>
                     </div>
                 </li>
@@ -132,11 +126,9 @@
                     <div class="timeline-badge danger"><h3 class="white font-roboto">4ª</h3></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title font-roboto red">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted">0000 comentários</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </p>
+                            <h4 class="timeline-title font-roboto red">Classificação indicativa</h4>
+                            <p>Criado por: george</p>
+                            <p><small class="text-muted">27 comentários em Outros temas e considerações</small></p>
                         </div>
                     </div>
                 </li>
@@ -144,11 +136,9 @@
                     <div class="timeline-badge danger"><h3 class="white font-roboto">5ª</h3></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title font-roboto red">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted">0000 comentários</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </p>
+                            <h4 class="timeline-title font-roboto red">Internet gratuita [wifi] em locais com grande concentração de pessoas</h4>
+                            <p>Criado por: Flavio Mosafi</p>
+                            <p><small class="text-muted">23 comentários em Neutralidade, Outros temas e considerações</small></p>
                         </div>
                     </div>
                 </li>
@@ -156,11 +146,9 @@
                     <div class="timeline-badge danger"><h3 class="white font-roboto">6ª</h3></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title font-roboto red">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted">0000 comentários</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </p>
+                            <h4 class="timeline-title font-roboto red">Cálculo da tarifa baseado na quantidade de dados transmitidos/enviados.</h4>
+                            <p>Criado por: Jotavio</p>
+                            <p><small class="text-muted">22 comentários em Outros temas e considerações</small></p>
                         </div>
                     </div>
                 </li>
@@ -168,11 +156,9 @@
                     <div class="timeline-badge danger"><h3 class="white font-roboto">7ª</h3></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title font-roboto red">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted">0000 comentários</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </p>
+                            <h4 class="timeline-title font-roboto red">“Acesso grátis” viola neutralidade, conforme fundamentos da decisão no Canadá sobre serviço de TV móvel</h4>
+                            <p>Criado por: Paulo Rená</p>
+                            <p><small class="text-muted">21 comentários em Neutralidade</small></p>
                         </div>
                     </div>
                 </li>
@@ -180,11 +166,9 @@
                     <div class="timeline-badge danger"><h3 class="white font-roboto">8ª</h3></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title font-roboto red">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted">0000 comentários</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </p>
+                            <h4 class="timeline-title font-roboto red">Velocidades distintas de download e upload?</h4>
+                            <p>Criado por: Fabiano Lucchese</p>
+                            <p><small class="text-muted">21 comentários em Neutralidade</small></p>
                         </div>
                     </div>
                 </li>
@@ -192,11 +176,9 @@
                     <div class="timeline-badge danger"><h3 class="white font-roboto">9ª</h3></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title font-roboto red">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted">0000 comentários</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </p>
+                            <h4 class="timeline-title font-roboto red">Guarda de Registros</h4>
+                            <p>Criado por: Julia Lozzi</p>
+                            <p><small class="text-muted">20 comentários em Guarda de Registros</small></p>
                         </div>
                     </div>
                 </li>
@@ -204,15 +186,12 @@
                     <div class="timeline-badge danger"><h3 class="white font-roboto">10ª</h3></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title font-roboto red">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted">0000 comentários</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. </p>
+                            <h4 class="timeline-title font-roboto red">Quem pode ser considerado provedor de acesso ou conexão?</h4>
+                            <p>Criado por: Maciel</p>
+                            <p><small class="text-muted">19 comentários em Guarda de Registros, Neutralidade, Outros temas e considerações, Privacidade na rede</small></p>
                         </div>
                     </div>
                 </li>
-                
             </ul>
         </div>
     </div>
@@ -302,155 +281,140 @@
         </div>
     </div>
 </div>
-
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["geochart"]});
-      google.setOnLoadCallback(drawRegionsMap);
-
-      function drawRegionsMap() {
-
-        var data = google.visualization.arrayToDataTable([
-            ['País', 'Visitas'],
-            ["Brasil",41885],
-            ["Estados Unidos",503],
-            ["Índia",146],
-            ["Reino Unido",87],
-            ["Alemanha",81],
-            ["Canadá",70],
-            ["Portugal",44],
-            ["França",38],
-            ["Argentina",37],
-            ["Itália",33],
-            ["Espanha",20],
-            ["Holanda",17],
-            ["Israel",16],
-            ["Japão",15],
-            ["Angola",13],
-            ["Irlanda",12],
-            ["Suíça",10],
-            ["Colômbia",10],
-            ["México",10],
-            ["Bélgica",9],
-            ["Chile",8],
-            ["Áustria",7],
-            ["Peru",5],
-            ["Bolívia",4],
-            ["Equador",4],
-            ["Quênia",4],
-            ["Paraguai",4],
-            ["Uruguai",4],
-            ["África do Sul",4],
-            ["Emirados Árabes Unidos",3],
-            ["Austrália",3],
-            ["China",3],
-            ["Hong Kong",3],
-            ["Indonésia",3],
-            ["nova Zelândia",3],
-            ["Filipinas",3],
-            ["Romênia",3],
-            ["Rússia",3],
-            ["Tunísia",3],
-            ["Turquia",3],
-            ["Venezuela",3],
-            ["Guiana Francesa",2],
-            ["Hungria",2  ],
-            ["Nicarágua",2],
-            ["Suécia",2],
-            ["Benin",1],
-            ["Costa Rica",1],
-            ["Cabo Verde",1],
-            ["Dinamarca",1],
-            ["Estônia",1],
-            ["Finlândia",1],
-            ["Haiti",1],
-            ["Islândia",1],
-            ["Camboja",1],
-            ["Polônia",1],
-            ["Arábia Saudita",1],
-            ["Trinidad & Tobago",1],
-            ["Taiwan",1],
-            ["Ucrânia",1]
-        ]);
-
-        var options = {
-            colorAxis: {colors: ['#521e1b', '#bc3f38']},
-            backgroundColor: '#779aac'
-        };
-
-        var chart = new google.visualization.GeoChart(document.getElementById('grafico-paises'));
-
-        chart.draw(data, options);
-        // faz o mapa ficar responsivo
-        function resizeHandler () {
-                chart.draw(data, options);
-            }
-            if (window.addEventListener) {
-                window.addEventListener('resize', resizeHandler, false);
-            }
-            else if (window.attachEvent) {
-                window.attachEvent('onresize', resizeHandler);
-            }
-      };
-    </script>
-
-
 <script type="text/javascript">
-    google.load('visualization', '1', {packages: ['corechart', 'bar']});
-    google.setOnLoadCallback(drawBasic);
-
-    function drawBasic() {
-
-          var data = google.visualization.arrayToDataTable([
-            ['Semana', 'Quantidade'],
-            ["05/02/15",40  ],
-            ["11/02/15",54  ],
-            ["19/02/15",56  ],
-            ["25/02/15",69  ],
-            ["28/02/15",76  ],
-            ["05/03/15",76  ],
-            ["11/03/15",80  ],
-            ["18/03/15",99  ],
-            ["25/03/15",131  ],
-            ["31/03/15",292  ],
-            ["01/04/15",308  ],
-            ["08/04/15",308  ],
-            ["15/04/15",320  ],
-            ["22/04/15",322  ],
-            ["27/04/15",333  ],
-            ["29/04/15",341  ],
-            ["04/05/15",360  ]
-          ]);
-
-          var options = {
-            title: 'Criação de pautas por semana',
-            //chartArea: {width: '50%'},
-            hAxis: {
-              title: 'Quantidade de Pautas',
-              minValue: 0
-            },
-
-            vAxis: {
-              title: 'Semana a partir de'
-            }
-          };
-
-          var chart = new google.visualization.BarChart(document.getElementById('grafico-pautas'));
-
-          chart.draw(data, options);
-          // faz o mapa ficar responsivo
-        function resizeHandler () {
-                chart.draw(data, options);
-            }
-            if (window.addEventListener) {
-                window.addEventListener('resize', resizeHandler, false);
-            }
-            else if (window.attachEvent) {
-                window.attachEvent('onresize', resizeHandler);
-            }
-        }
+google.load("visualization", "1", {packages:["geochart"]});
+google.setOnLoadCallback(drawRegionsMap);
+function drawRegionsMap() {
+var data = google.visualization.arrayToDataTable([
+['País', 'Visitas'],
+["Brasil",41885],
+["Estados Unidos",503],
+["Índia",146],
+["Reino Unido",87],
+["Alemanha",81],
+["Canadá",70],
+["Portugal",44],
+["França",38],
+["Argentina",37],
+["Itália",33],
+["Espanha",20],
+["Holanda",17],
+["Israel",16],
+["Japão",15],
+["Angola",13],
+["Irlanda",12],
+["Suíça",10],
+["Colômbia",10],
+["México",10],
+["Bélgica",9],
+["Chile",8],
+["Áustria",7],
+["Peru",5],
+["Bolívia",4],
+["Equador",4],
+["Quênia",4],
+["Paraguai",4],
+["Uruguai",4],
+["África do Sul",4],
+["Emirados Árabes Unidos",3],
+["Austrália",3],
+["China",3],
+["Hong Kong",3],
+["Indonésia",3],
+["nova Zelândia",3],
+["Filipinas",3],
+["Romênia",3],
+["Rússia",3],
+["Tunísia",3],
+["Turquia",3],
+["Venezuela",3],
+["Guiana Francesa",2],
+["Hungria",2  ],
+["Nicarágua",2],
+["Suécia",2],
+["Benin",1],
+["Costa Rica",1],
+["Cabo Verde",1],
+["Dinamarca",1],
+["Estônia",1],
+["Finlândia",1],
+["Haiti",1],
+["Islândia",1],
+["Camboja",1],
+["Polônia",1],
+["Arábia Saudita",1],
+["Trinidad & Tobago",1],
+["Taiwan",1],
+["Ucrânia",1]
+]);
+var options = {
+colorAxis: {colors: ['#521e1b', '#bc3f38']},
+backgroundColor: '#779aac'
+};
+var chart = new google.visualization.GeoChart(document.getElementById('grafico-paises'));
+chart.draw(data, options);
+// faz o mapa ficar responsivo
+function resizeHandler () {
+chart.draw(data, options);
+}
+if (window.addEventListener) {
+window.addEventListener('resize', resizeHandler, false);
+}
+else if (window.attachEvent) {
+window.attachEvent('onresize', resizeHandler);
+}
+};
 </script>
-
+<script type="text/javascript">
+google.load('visualization', '1', {packages: ['corechart', 'bar']});
+google.setOnLoadCallback(drawBasic);
+function drawBasic() {
+var data = google.visualization.arrayToDataTable([
+['Semana', 'Quantidade'],
+["05/02/15",40  ],
+["11/02/15",54  ],
+["19/02/15",56  ],
+["25/02/15",69  ],
+["28/02/15",76  ],
+["05/03/15",76  ],
+["11/03/15",80  ],
+["18/03/15",99  ],
+["25/03/15",131  ],
+["31/03/15",292  ],
+["01/04/15",308  ],
+["08/04/15",308  ],
+["15/04/15",320  ],
+["22/04/15",322  ],
+["27/04/15",333  ],
+["29/04/15",341  ],
+["04/05/15",360  ]
+]);
+var options = {
+title: 'Criação de pautas por semana',
+//chartArea: {width: '50%'},
+hAxis: {
+title: 'Quantidade de Pautas',
+minValue: 0
+},
+vAxis: {
+title: 'Semana a partir de'
+}
+};
+var chart = new google.visualization.BarChart(document.getElementById('grafico-pautas'));
+chart.draw(data, options);
+// faz o mapa ficar responsivo
+function resizeHandler () {
+chart.draw(data, options);
+}
+if (window.addEventListener) {
+window.addEventListener('resize', resizeHandler, false);
+}
+else if (window.attachEvent) {
+window.attachEvent('onresize', resizeHandler);
+}
+}
+</script>
 <div class="back-to-top">
     <a href="#" class="white"><i class="fa fa-level-up"></i> Voltar para o topo</a>
 </div>
