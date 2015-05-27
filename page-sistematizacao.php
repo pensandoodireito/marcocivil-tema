@@ -49,8 +49,12 @@
                 <div class="col-md-5 menu-participar">
                     <ul class="list-unstyled">
                         <li>
-                            <a href="/marcocivil/wp-content/uploads/sites/2/2015/05/pautas-comentarios.zip" class="red">Download do histórico</a>
+                            <a href="/marcocivil/wp-content/uploads/sites/2/2015/05/pautas-comentarios.zip" class="red">Download do histórico em CSV</a>
                             <p><small>Pautas e comentários ( em fomato “.csv”)</small></p>
+                        </li>
+                        <li>
+                            <a href="/marcocivil/wp-content/uploads/sites/2/2015/05/pdf-contribuicoes.zip" class="red">Download do histórico em PDF</a>
+                            <p><small>Pautas e comentários ( em fomato “.pdf” divididos por eixos)</small></p>
                         </li>
                         <li><a target="_blank" href="/marcocivil/pauta">Histórico online</a></li>
                         <li><a href="#envie-seu-decreto">Envie sua proposta de sistematização</a></li>
