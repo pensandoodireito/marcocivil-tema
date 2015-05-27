@@ -154,7 +154,7 @@
                 <div class="col-md-8">
                     <h4 class="font-roboto h1">Marco civil: O debate em números</h4>
                     <p class="mt-lg fontsize-lg"><a href="/marcocivil/debate-em-numeros">Veja quantos participaram, como foi a evolução do debate, e também como foi a fase anterior ao processo de regulamentação.</a></p>
-                    <!--<p><a href="/marcocivil/debate-em-numeros" class="btn btn-info font-roboto fontsize-lg">Confira!</a></p>-->
+                    <p class="mt-lg"><a href="/marcocivil/debate-em-numeros" class="btn btn-warning font-roboto fontsize-lg">Confira todos os números do debate!</a></p>
                 </div>
                 <div class="col-md-4 fontsize-lg exnume font-roboto">
                     <p class="mt-md">
