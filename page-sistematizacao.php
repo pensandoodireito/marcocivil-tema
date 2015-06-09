@@ -44,7 +44,7 @@
                     <h2 id="como-participar" class="font-roboto red h1">Como participar</h2>
                     <p class="mt-md">Para participar da fase de Sistematização, envie sugestões de texto de decreto, as quais devem ser feitas a partir das contribuições recebidas durante o debate público on-line e, preferencialemente, conter justificativas das escolhas do texto com a metodologia utilizada.  </p>
                     <p class="mt-md">Procure qualificar seu texto com bons argumentos, que busquem atender da melhor forma o interesse público levando sempre em consideração os limites do que pode ser tratado em um decreto e lembre-se: o conteúdo é de sua responsabilidade, ressaltando que opiniões recorrentes ou com maior adesão não necessariamente estarão no texto que será proposto pelo Ministério da Justiça, nem precisam vincular o proponente da sistematização. </p>
-                    <p class="mt-md"><a href="http://www4.planalto.gov.br/legislacao/legislacao-1/decretos1/2015-decretos#content" target="_blank">Veja alguns exemplos para criar seu decreto</a>. Siga a formatação e organização destes exemplos As sugestões de decreto serão recebidas até 31 de maio pelo botão abaixo. O material enviado poderá ser disponibilizado nesta página depois dessa data. </p>
+                    <p class="mt-md"><a href="http://www4.planalto.gov.br/legislacao/legislacao-1/decretos1/2015-decretos#content" target="_blank">Veja alguns exemplos para criar seu decreto</a>. Siga a formatação e organização destes exemplos. O material enviado poderá ser disponibilizado nesta página. </p>
                 </div>
                 <div class="col-md-5 menu-participar">
                     <ul class="list-unstyled">
