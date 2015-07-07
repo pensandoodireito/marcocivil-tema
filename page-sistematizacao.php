@@ -155,14 +155,16 @@
                     <div class="col-md-5 text-center">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sistematizacao-marcocivil-puzzles.png" class="img-responsive puzzles"
                         alt="Logo: Marco Civil da Internet">
-                        <p class="mt-md"><a href="http://participacao.mj.gov.br/marcocivil/wp-content/uploads/sites/2/2015/07/propostas_sistematizacao.zip" class="btn btn-success btn-lg font-roboto"><i class="fa fa-download"></i> Download das contribuições</a></p>
-                        <p><small>( arquivo em formato ".zip", e contribuições em fomato “.csv”)</small></p>
+
                     </div>
                     <div class="col-md-7">
                         <h4 class="font-roboto h1 red">Contribuições enviadas</h4>
-                        <p class="mt-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum, lacus vitae eleifend aliquet, leo lacus consequat elit, sed sollicitudin mauris massa vel erat. </p>
-                        <p class="mt-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum, lacus vitae eleifend aliquet, leo lacus consequat elit, sed sollicitudin mauris massa vel erat. </p>
+                        <p class="mt-md">Baixe o arquivo ZIP com as sistematizações que foram enviadas até o momento.</p>
                     </div>
+                </div>
+                <div class="row text-center">
+                    <p class="mt-md"><a href="http://participacao.mj.gov.br/marcocivil/wp-content/uploads/sites/2/2015/07/propostas_sistematizacao.zip" class="btn btn-success btn-lg font-roboto"><i class="fa fa-download"></i> Download das contribuições</a></p>
+                        <p><small>( arquivo em formato ".zip" )</small></p>
                 </div>
             </div>
         </div>
