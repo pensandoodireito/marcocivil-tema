@@ -148,6 +148,27 @@
             </div>
         </div>
     </div>
+    <div class="contribuicoes-enviadas">
+        <div class="container">
+            <div class="contribuicoes-content">
+                <div class="row">
+                    <div class="col-md-5 text-center">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sistematizacao-marcocivil-puzzles.png" class="img-responsive puzzles"
+                        alt="Logo: Marco Civil da Internet">
+
+                    </div>
+                    <div class="col-md-7">
+                        <h4 class="font-roboto h1 red">Contribuições enviadas</h4>
+                        <p class="mt-md">Baixe o arquivo ZIP com as sistematizações que foram enviadas até o momento.</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <p class="mt-md"><a href="http://participacao.mj.gov.br/marcocivil/wp-content/uploads/sites/2/2015/07/propostas_sistematizacao.zip" class="btn btn-success btn-lg font-roboto"><i class="fa fa-download"></i> Download das contribuições</a></p>
+                        <p><small>( arquivo em formato ".zip" )</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="emnumeros">
         <div class="container">
             <div class="row">
@@ -167,7 +188,7 @@
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-calendar fa-stack-1x blue"></i>
                             </span>
-                         Durante <strong class="h1">82 </strong>dias de debate</p>
+                        Durante <strong class="h1">82 </strong>dias de debate</p>
                         <p class="mt-md">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>

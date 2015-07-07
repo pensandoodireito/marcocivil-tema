@@ -1,16 +1,3 @@
-/*
-@path-nv1: 		"..";
-@path-nv2: 		"../..";
-@path-nv3: 		"../../..";
-@path-nv4: 		"../../../..";
-@path-nv5: 		"../../../../..";
-
-@path-var-boots:    "bootstrap/variables.less";
-@path-mixins-boots: "bootstrap/mixins.less";
-@path-var-theme:    "theme/theme-variables.less";
-@path-less: 		"css/less";
-@path-participacao: "participacao-tema";
-*/
 #marco-civil .apresenta-protecao {
   background: url("../images/bck-debates-marco-02.jpg") repeat top left #a58d37;
   padding: 40px 20px;
@@ -254,6 +241,19 @@ div.mce-panel {
   color: #fff;
   background-color: #5bc0de;
   border-color: #46b8da;
+}
+#sistematizacao .contribuicoes-enviadas {
+  padding: 40px 0;
+}
+#sistematizacao .contribuicoes-enviadas .contribuicoes-content {
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px 10px -4px #323232;
+  border: 1px solid #c7c5c7;
+}
+#sistematizacao .contribuicoes-enviadas .contribuicoes-content .puzzles {
+  margin-top: -80px;
+  display: inline !important;
 }
 #sistematizacao .emnumeros {
   padding: 40px 0;
