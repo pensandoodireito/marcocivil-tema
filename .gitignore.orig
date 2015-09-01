@@ -12,7 +12,10 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 .idea
+<<<<<<< HEAD
+css/*.css
+=======
 
 css/*.css
 css/*.css.map
-
+>>>>>>> b3cbb4313651ce60574c2a5c893e464e2cb0696d
