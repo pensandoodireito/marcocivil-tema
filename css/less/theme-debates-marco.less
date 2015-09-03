@@ -135,29 +135,7 @@ div.mce-panel {
   .comoparticipar {
     background-color: #f9f1d5;
     .margin-padding-default();
-    .menu-participar {
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0px 2px 10px -4px rgba(50, 50, 50, 1);
-      margin: 20px;
-      li {
-        margin-top: 10px;
-        border-top: 1px solid #ecdfb4;
-        padding-top: 10px;
-        &:first-child {
-          margin-top: 0;
-          border-top: 0;
-          padding-top: 0;
-        }
-        a {
-          font-weight: 700;
-          font-size: 20px;
-          font-family: @font-family-roboto;
-          &:hover {
-          }
-        }
-      }
-    }
+
   }
   .eixos {
     .margin-padding-default();
@@ -253,7 +231,33 @@ div.mce-panel {
   }
 }
 
-// Marci civil em números:
+// Elementos genéricos
+
+.menu-participar {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px -4px rgba(50, 50, 50, 1);
+  margin: 20px;
+  li {
+    margin-top: 10px;
+    border-top: 1px solid #ecdfb4;
+    padding-top: 10px;
+    &:first-child {
+      margin-top: 0;
+      border-top: 0;
+      padding-top: 0;
+    }
+    a {
+      font-weight: 700;
+      font-size: 20px;
+      font-family: @font-family-roboto;
+      &:hover {
+      }
+    }
+  }
+}
+
+// Marco civil em números:
 #marco-numeros {
   .top {
     background-color: #0e6490;
@@ -683,8 +687,32 @@ div.mce-panel {
       }
     }
   }
+  // Fase um
+  .fase-um-content {
+    .fase-um-debate {
+      .fase-um-debate-content {
+        background-color: #f5f5f5;
+        padding: 30px 0;
+      }
+    }
+    .fase-um-numeros {
+      .fase-um-numeros-content {
+        background-color: #0e6490;
+        color: #fff;
+        .dados{
+          background-color:#0f6e9f;
+        }
 
-  //tabs na esquerda, para área dinâmica de comentários
+      }
+    }
+    .fase-um-sistemat {
+      .fase-um-sistemat-content {
+        background: url("../images/bck-sistematizacao.jpg") repeat center bottom #527671;
+      }
+    }
+  }
+
+  //Fase dois: tabs na esquerda, para área dinâmica de comentários
   .ultimos-comentarios {
     .ultimos-comentarios-estructure {
       .comments-structure {
