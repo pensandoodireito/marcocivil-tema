@@ -252,56 +252,7 @@
                                                                                     monitoramento</a></strong>
                                                                         </p>
                                                                     </div>
-                                                                    <ul class="list-group">
-                                                                        <?php
-                                                                        $listcomment = '';
-                                                                        for ($i = 0; $i < 3; $i++) {
-                                                                            $listcomment .= "
-                                                                   <li class='list-group-item'>
-                                                                    <div class='comments-line'>
-                                                                        <div class='comments-image'>
-                                                                            <img src='http://localhost/marcocivil/wp-content/themes/marcocivil-tema/images/avatar.png'
-                                                                                 height='32' width='32'>
-                                                                        </div>
-                                                                        <div class='comments-text'>
-                                                                            <div class='comment-content'>
-                                                                                <div class='comment-comment'>
-                                                                                    <p><a href='#'> Ut eu justo ornare,
-                                                                                        porttitor massa sit amet,
-                                                                                        maximus libero. Praesent sit
-                                                                                        amet leo vulputate, rutrum
-                                                                                        tellus nec, tincidunt neque.
-                                                                                        Donec sollicitudin ligula neque,
-                                                                                        quis lobortis turpis mollis
-                                                                                        sed. Lorem ipsum dolor sit
-                                                                                        amet, consectetur adipiscing
-                                                                                        elit. Nam vitae accumsan ligula.
-                                                                                        Ut non pretium lectus. Quisque
-                                                                                        convallis velit eget magna
-                                                                                        luctus elementum. Pellentesque
-                                                                                        habitant morbi tristique
-                                                                                        senectus et netus et malesuada
-                                                                                        fames ac turpis egestas.
-                                                                                        Pellentesque feugiat scelerisque
-                                                                                        gravida.</a></p>
-                                                                                </div>
-                                                                                <div class='comments-mic-info'>
-                                                                                    <p>
-                                                                                        <small>Moises <span
-                                                                                                class='ml-md'><i
-                                                                                                class='fa fa-clock-o'></i> em 8/07/2015</span>
-                                                                                        </small>
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    </li>
-                                                                    ";
-                                                                        }
-                                                                        echo $listcomment;
-                                                                        ?>
-                                                                    </ul>
+                                                                    <ul class="list-group"></ul>
                                                                 </div>
                                                                 <div class="comments-col">
                                                                     <div class="comments-header">
@@ -312,54 +263,6 @@
                                                                         </p>
                                                                     </div>
                                                                     <ul class="list-group">
-                                                                        <?php
-                                                                        $listcomment = '';
-                                                                        for ($i = 0; $i < 3; $i++) {
-                                                                            $listcomment .= "
-                                                                   <li class='list-group-item'>
-                                                                    <div class='comments-line'>
-                                                                        <div class='comments-image'>
-                                                                            <img src='http://localhost/marcocivil/wp-content/themes/marcocivil-tema/images/avatar.png'
-                                                                                 height='32' width='32'>
-                                                                        </div>
-                                                                        <div class='comments-text'>
-                                                                            <div class='comment-content'>
-                                                                                <div class='comment-comment'>
-                                                                                    <p><a href='#'> Ut eu justo ornare,
-                                                                                        porttitor massa sit amet,
-                                                                                        maximus libero. Praesent sit
-                                                                                        amet leo vulputate, rutrum
-                                                                                        tellus nec, tincidunt neque.
-                                                                                        Donec sollicitudin ligula neque,
-                                                                                        quis lobortis turpis mollis
-                                                                                        sed. Lorem ipsum dolor sit
-                                                                                        amet, consectetur adipiscing
-                                                                                        elit. Nam vitae accumsan ligula.
-                                                                                        Ut non pretium lectus. Quisque
-                                                                                        convallis velit eget magna
-                                                                                        luctus elementum. Pellentesque
-                                                                                        habitant morbi tristique
-                                                                                        senectus et netus et malesuada
-                                                                                        fames ac turpis egestas.
-                                                                                        Pellentesque feugiat scelerisque
-                                                                                        gravida.</a></p>
-                                                                                </div>
-                                                                                <div class='comments-mic-info'>
-                                                                                    <p>
-                                                                                        <small>Moises <span
-                                                                                                class='ml-md'><i
-                                                                                                class='fa fa-clock-o'></i> em 8/07/2015</span>
-                                                                                        </small>
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    </li>
-                                                                    ";
-                                                                        }
-                                                                        echo $listcomment;
-                                                                        ?>
                                                                     </ul>
                                                                 </div>
                                                                 <div class="comments-col">
@@ -370,56 +273,7 @@
                                                                                     monitoramento</a></strong>
                                                                         </p>
                                                                     </div>
-                                                                    <ul class="list-group">
-                                                                        <?php
-                                                                        $listcomment = '';
-                                                                        for ($i = 0; $i < 3; $i++) {
-                                                                            $listcomment .= "
-                                                                   <li class='list-group-item'>
-                                                                    <div class='comments-line'>
-                                                                        <div class='comments-image'>
-                                                                            <img src='http://localhost/marcocivil/wp-content/themes/marcocivil-tema/images/avatar.png'
-                                                                                 height='32' width='32'>
-                                                                        </div>
-                                                                        <div class='comments-text'>
-                                                                            <div class='comment-content'>
-                                                                                <div class='comment-comment'>
-                                                                                    <p><a href='#'> Ut eu justo ornare,
-                                                                                        porttitor massa sit amet,
-                                                                                        maximus libero. Praesent sit
-                                                                                        amet leo vulputate, rutrum
-                                                                                        tellus nec, tincidunt neque.
-                                                                                        Donec sollicitudin ligula neque,
-                                                                                        quis lobortis turpis mollis
-                                                                                        sed. Lorem ipsum dolor sit
-                                                                                        amet, consectetur adipiscing
-                                                                                        elit. Nam vitae accumsan ligula.
-                                                                                        Ut non pretium lectus. Quisque
-                                                                                        convallis velit eget magna
-                                                                                        luctus elementum. Pellentesque
-                                                                                        habitant morbi tristique
-                                                                                        senectus et netus et malesuada
-                                                                                        fames ac turpis egestas.
-                                                                                        Pellentesque feugiat scelerisque
-                                                                                        gravida.</a></p>
-                                                                                </div>
-                                                                                <div class='comments-mic-info'>
-                                                                                    <p>
-                                                                                        <small>Moises <span
-                                                                                                class='ml-md'><i
-                                                                                                class='fa fa-clock-o'></i> em 8/07/2015</span>
-                                                                                        </small>
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    </li>
-                                                                    ";
-                                                                        }
-                                                                        echo $listcomment;
-                                                                        ?>
-                                                                    </ul>
+                                                                    <ul class="list-group"></ul>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -517,6 +371,31 @@
     <div class="back-to-top">
         <a href="#" class="white"><i class="fa fa-level-up"></i> Voltar para o topo</a>
     </div>
+<script type="text/javascript">
+
+    jQuery(function($) {
+        var liItem = $('<li />').addClass('list-group-item').append(
+            $('<div />').addClass('comments-line')
+                .append($('<div />').addClass('comments-image')
+                    .append($('<img />').attr('src','http://localhost/marcocivil/wp-content/themes/marcocivil-tema/images/avatar.png')))
+                .append($('<div />').addClass('comments-text')
+                    .append($('<div />').addClass('comment-content')
+                        .append($('<div />').addClass('comment-comment')
+                            .append($('<p />').append($('<a />').attr('href', '#').html('Mensagem'))))
+                        .append($('<div />').addClass('comments-mic-info').append($('<p />')
+                            .append($('<small />')
+                                .append('Moisés')
+                                .append($('<span />').addClass('ml-md')
+                                    .append($('<i />').addClass('fa fa-clock-o'))).append(' em 08/07/2015'))))))
+        );
+
+        $('.list-group').each(function( index, obj ){
+            $(obj).append(liItem.clone()).append(liItem.clone()).append(liItem.clone());
+        });
+
+    });
+</script>
+
 <?php get_template_part('front', 'noticias'); ?>
 <?php get_template_part('mini-tutorial'); ?>
 <?php get_footer(); ?>
