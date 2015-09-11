@@ -243,39 +243,7 @@
                                                 <div class="col-md-12">
                                                     <div class="comments-structure">
                                                         <div class="comments-main">
-                                                            <div class="three-col">
-                                                                <div class="comments-col">
-                                                                    <div class="comments-header">
-                                                                        <p class="red"><strong><a href="#">Comentários
-                                                                                    sobre
-                                                                                    dados, estatísticas e
-                                                                                    monitoramento</a></strong>
-                                                                        </p>
-                                                                    </div>
-                                                                    <ul class="list-group"></ul>
-                                                                </div>
-                                                                <div class="comments-col">
-                                                                    <div class="comments-header">
-                                                                        <p class="red"><strong><a href="#">Comentários
-                                                                                    sobre
-                                                                                    dados, estatísticas e
-                                                                                    monitoramento</a></strong>
-                                                                        </p>
-                                                                    </div>
-                                                                    <ul class="list-group">
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="comments-col">
-                                                                    <div class="comments-header">
-                                                                        <p class="red"><strong><a href="#">Comentários
-                                                                                    sobre
-                                                                                    dados, estatísticas e
-                                                                                    monitoramento</a></strong>
-                                                                        </p>
-                                                                    </div>
-                                                                    <ul class="list-group"></ul>
-                                                                </div>
-                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -374,24 +342,68 @@
 <script type="text/javascript">
 
     jQuery(function($) {
-        var liItem = $('<li />').addClass('list-group-item').append(
-            $('<div />').addClass('comments-line')
-                .append($('<div />').addClass('comments-image')
-                    .append($('<img />').attr('src','http://localhost/marcocivil/wp-content/themes/marcocivil-tema/images/avatar.png')))
-                .append($('<div />').addClass('comments-text')
-                    .append($('<div />').addClass('comment-content')
-                        .append($('<div />').addClass('comment-comment')
-                            .append($('<p />').append($('<a />').attr('href', '#').html('Mensagem'))))
-                        .append($('<div />').addClass('comments-mic-info').append($('<p />')
-                            .append($('<small />')
-                                .append('Moisés')
-                                .append($('<span />').addClass('ml-md')
-                                    .append($('<i />').addClass('fa fa-clock-o'))).append(' em 08/07/2015'))))))
-        );
+        var CommentTpl = {
 
-        $('.list-group').each(function( index, obj ){
-            $(obj).append(liItem.clone()).append(liItem.clone()).append(liItem.clone());
-        });
+            loadComments : function(){
+
+            var wnonce = '<?php echo wp_create_nonce('side_comments_last_comments_nonce');?>';
+                $.post('wp-admin/admin-ajax.php',{
+                    'action':'last_comments_callback',
+                    'last_comments_nonce': wnonce,
+                    'post_id': 413
+                },function(objeto){
+                    if(objeto.success){
+                        var divColumn = $('<div />');
+                        if(objeto.data.length >= 3){
+                            columnQuant = "three-col";
+                        }else if (objeto.data.length == 2){
+                            columnQuant = "two-col";
+                        }else{
+                            columnQuant = "one-col";
+                        }
+                        divColumn.addClass(columnQuant);
+
+                        $.each(objeto.data, function(index, section){
+                            divColumn.append(CommentTpl.renderSection(section));
+                        });
+                        $('.comments-main').append(divColumn);
+                    }
+                }, 'json');
+            },
+
+            renderComment : function( comment, sectionId ){
+                return $('<li />').addClass('list-group-item').append(
+                    $('<div />').addClass('comments-line')
+                        .append($('<div />').addClass('comments-text')
+                            .append($('<div />').addClass('comment-content')
+                                .append($('<div />').addClass('comment-comment')
+                                    .append($('<p />').append($('<a />').attr('href', '/marcocivil/texto-em-debate/texto-em-debate/#commentable-section-'+sectionId).html(comment.comment_text))))
+                                .append($('<div />').addClass('comments-mic-info').append($('<p />')
+                                    .append($('<small />')
+                                        .append(comment.author)
+                                        .append($('<span />').addClass('ml-md')
+                                            .append($('<i />').addClass('fa fa-clock-o'))).append(' ' + comment.date))))))
+                ).clone();
+            },
+
+            renderSection : function( section ){
+                var commentSection = $('<div />').addClass('comments-col');
+                commentSection.append(
+                    $('<div />').addClass('comments-header')
+                        .append($('<p />').addClass('red')
+                            .append($('<strong />')
+                                .append($('<a />').attr('href', '/marcocivil/texto-em-debate/texto-em-debate/#commentable-section-'+section.section_id).html(section.section_text))))
+                );
+                var listGroup = $('<div />').addClass('list-group');
+                if(section.comments.length){
+                    $.each(section.comments, function( index, comment ) {
+                        listGroup.append(CommentTpl.renderComment(comment, section.section_id));
+                    });
+                }
+                commentSection.append(listGroup);
+                return commentSection;
+            }
+        };
 
     });
 </script>
