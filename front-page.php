@@ -214,7 +214,7 @@
                                                         utilizando a
                                                         internet como plataforma de debate.</p>
 
-                                                    <p><a href="#"
+                                                    <p><a href="/marcocivil/texto-em-debate/texto-em-debate/"
                                                           class="btn btn-danger btn-lg font-roboto mt-md"><strong>Participe
                                                                 do debate!</strong></a></p>
                                                 </div>
@@ -340,17 +340,18 @@
         <a href="#" class="white"><i class="fa fa-level-up"></i> Voltar para o topo</a>
     </div>
 <script type="text/javascript">
-
     jQuery(function($) {
         var CommentTpl = {
 
-            loadComments : function(){
+            urlText : '/marcocivil/texto-em-debate/texto-em-debate/',
+            postId  : 413,
 
-            var wnonce = '<?php echo wp_create_nonce('side_comments_last_comments_nonce');?>';
-                $.post('wp-admin/admin-ajax.php',{
+            load : function(){
+                var wnonce = '<?php echo wp_create_nonce('side_comments_last_comments_nonce');?>';
+                return $.post('wp-admin/admin-ajax.php',{
                     'action':'last_comments_callback',
                     'last_comments_nonce': wnonce,
-                    'post_id': 413
+                    'post_id': CommentTpl.postId
                 },function(objeto){
                     if(objeto.success){
                         var divColumn = $('<div />');
@@ -364,9 +365,20 @@
                         divColumn.addClass(columnQuant);
 
                         $.each(objeto.data, function(index, section){
+                            prevColumn = $('.'+ columnQuant+' .comments-col:eq(' + index + '):visible');
+                            existsSection = prevColumn.find(' .comments-header a').html() == section.section_text;
+                            if(existsSection && section.comments.length){
+                                $.each(section.comments, function(index, prevComment){
+                                    if($(prevColumn).find('.comment-comment:eq('+index+') a:visible').html() != prevComment.comment_text){
+                                        prevColumn.find('.list-group-item').hide(1000);
+                                    }
+                                });
+                            }else{
+                                prevColumn.remove();
+                            }
                             divColumn.append(CommentTpl.renderSection(section));
                         });
-                        $('.comments-main').append(divColumn);
+                        $('.comments-main').html(divColumn);
                     }
                 }, 'json');
             },
@@ -377,7 +389,7 @@
                         .append($('<div />').addClass('comments-text')
                             .append($('<div />').addClass('comment-content')
                                 .append($('<div />').addClass('comment-comment')
-                                    .append($('<p />').append($('<a />').attr('href', '/marcocivil/texto-em-debate/texto-em-debate/#commentable-section-'+sectionId).html(comment.comment_text))))
+                                    .append($('<p />').append($('<a />').attr('href', CommentTpl.urlText+'#commentable-section-'+sectionId).html(comment.comment_text))))
                                 .append($('<div />').addClass('comments-mic-info').append($('<p />')
                                     .append($('<small />')
                                         .append(comment.author)
@@ -392,7 +404,7 @@
                     $('<div />').addClass('comments-header')
                         .append($('<p />').addClass('red')
                             .append($('<strong />')
-                                .append($('<a />').attr('href', '/marcocivil/texto-em-debate/texto-em-debate/#commentable-section-'+section.section_id).html(section.section_text))))
+                                .append($('<a />').attr('href', CommentTpl.urlText+'#commentable-section-'+section.section_id).html(section.section_text))))
                 );
                 var listGroup = $('<div />').addClass('list-group');
                 if(section.comments.length){
@@ -404,6 +416,10 @@
                 return commentSection;
             }
         };
+
+        CommentTpl.load();
+
+        var timeoutID = setInterval(CommentTpl.load, 4000);
 
     });
 </script>
