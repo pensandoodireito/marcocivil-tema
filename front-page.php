@@ -214,7 +214,7 @@
                                                         utilizando a
                                                         internet como plataforma de debate.</p>
 
-                                                    <p><a href="#"
+                                                    <p><a href="/marcocivil/texto-em-debate/texto-em-debate/"
                                                           class="btn btn-danger btn-lg font-roboto mt-md"><strong>Participe
                                                                 do debate!</strong></a></p>
                                                 </div>
@@ -243,39 +243,7 @@
                                                 <div class="col-md-12">
                                                     <div class="comments-structure">
                                                         <div class="comments-main">
-                                                            <div class="three-col">
-                                                                <div class="comments-col">
-                                                                    <div class="comments-header">
-                                                                        <p class="red"><strong><a href="#">Comentários
-                                                                                    sobre
-                                                                                    dados, estatísticas e
-                                                                                    monitoramento</a></strong>
-                                                                        </p>
-                                                                    </div>
-                                                                    <ul class="list-group"></ul>
-                                                                </div>
-                                                                <div class="comments-col">
-                                                                    <div class="comments-header">
-                                                                        <p class="red"><strong><a href="#">Comentários
-                                                                                    sobre
-                                                                                    dados, estatísticas e
-                                                                                    monitoramento</a></strong>
-                                                                        </p>
-                                                                    </div>
-                                                                    <ul class="list-group">
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="comments-col">
-                                                                    <div class="comments-header">
-                                                                        <p class="red"><strong><a href="#">Comentários
-                                                                                    sobre
-                                                                                    dados, estatísticas e
-                                                                                    monitoramento</a></strong>
-                                                                        </p>
-                                                                    </div>
-                                                                    <ul class="list-group"></ul>
-                                                                </div>
-                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -372,26 +340,86 @@
         <a href="#" class="white"><i class="fa fa-level-up"></i> Voltar para o topo</a>
     </div>
 <script type="text/javascript">
-
     jQuery(function($) {
-        var liItem = $('<li />').addClass('list-group-item').append(
-            $('<div />').addClass('comments-line')
-                .append($('<div />').addClass('comments-image')
-                    .append($('<img />').attr('src','http://localhost/marcocivil/wp-content/themes/marcocivil-tema/images/avatar.png')))
-                .append($('<div />').addClass('comments-text')
-                    .append($('<div />').addClass('comment-content')
-                        .append($('<div />').addClass('comment-comment')
-                            .append($('<p />').append($('<a />').attr('href', '#').html('Mensagem'))))
-                        .append($('<div />').addClass('comments-mic-info').append($('<p />')
-                            .append($('<small />')
-                                .append('Moisés')
-                                .append($('<span />').addClass('ml-md')
-                                    .append($('<i />').addClass('fa fa-clock-o'))).append(' em 08/07/2015'))))))
-        );
+        var CommentTpl = {
 
-        $('.list-group').each(function( index, obj ){
-            $(obj).append(liItem.clone()).append(liItem.clone()).append(liItem.clone());
-        });
+            urlText : '/marcocivil/texto-em-debate/texto-em-debate/',
+            postId  : 413,
+
+            load : function(){
+                var wnonce = '<?php echo wp_create_nonce('side_comments_last_comments_nonce');?>';
+                return $.post('wp-admin/admin-ajax.php',{
+                    'action':'last_comments_callback',
+                    'last_comments_nonce': wnonce,
+                    'post_id': CommentTpl.postId
+                },function(objeto){
+                    if(objeto.success){
+                        var divColumn = $('<div />');
+                        if(objeto.data.length >= 3){
+                            columnQuant = "three-col";
+                        }else if (objeto.data.length == 2){
+                            columnQuant = "two-col";
+                        }else{
+                            columnQuant = "one-col";
+                        }
+                        divColumn.addClass(columnQuant);
+
+                        $.each(objeto.data, function(index, section){
+                            prevColumn = $('.'+ columnQuant+' .comments-col:eq(' + index + '):visible');
+                            existsSection = prevColumn.find(' .comments-header a').html() == section.section_text;
+                            if(existsSection && section.comments.length){
+                                $.each(section.comments, function(index, prevComment){
+                                    if($(prevColumn).find('.comment-comment:eq('+index+') a:visible').html() != prevComment.comment_text){
+                                        prevColumn.find('.list-group-item').hide(1000);
+                                    }
+                                });
+                            }else{
+                                prevColumn.remove();
+                            }
+                            divColumn.append(CommentTpl.renderSection(section));
+                        });
+                        $('.comments-main').html(divColumn);
+                    }
+                }, 'json');
+            },
+
+            renderComment : function( comment, sectionId ){
+                return $('<li />').addClass('list-group-item').append(
+                    $('<div />').addClass('comments-line')
+                        .append($('<div />').addClass('comments-text')
+                            .append($('<div />').addClass('comment-content')
+                                .append($('<div />').addClass('comment-comment')
+                                    .append($('<p />').append($('<a />').attr('href', CommentTpl.urlText+'#commentable-section-'+sectionId).html(comment.comment_text))))
+                                .append($('<div />').addClass('comments-mic-info').append($('<p />')
+                                    .append($('<small />')
+                                        .append(comment.author)
+                                        .append($('<span />').addClass('ml-md')
+                                            .append($('<i />').addClass('fa fa-clock-o'))).append(' ' + comment.date))))))
+                ).clone();
+            },
+
+            renderSection : function( section ){
+                var commentSection = $('<div />').addClass('comments-col');
+                commentSection.append(
+                    $('<div />').addClass('comments-header')
+                        .append($('<p />').addClass('red')
+                            .append($('<strong />')
+                                .append($('<a />').attr('href', CommentTpl.urlText+'#commentable-section-'+section.section_id).html(section.section_text))))
+                );
+                var listGroup = $('<div />').addClass('list-group');
+                if(section.comments.length){
+                    $.each(section.comments, function( index, comment ) {
+                        listGroup.append(CommentTpl.renderComment(comment, section.section_id));
+                    });
+                }
+                commentSection.append(listGroup);
+                return commentSection;
+            }
+        };
+
+        CommentTpl.load();
+
+        var timeoutID = setInterval(CommentTpl.load, 4000);
 
     });
 </script>
