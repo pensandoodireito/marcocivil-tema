@@ -226,36 +226,8 @@
                                                         alt=""></a>
                                             </div>
                                         </div>
-                                        <div class="ultimos-comentarios divider-top mt-md">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <h2 class="font-roboto red">Útimos comentários no texto</h2>
+                                        <?php if ( is_active_sidebar( 'texto-ultimos-comentarios' ) ) dynamic_sidebar( 'texto-ultimos-comentarios' ); ?>
 
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                                                        vitae
-                                                        accumsan ligula. Ut non pretium lectus. Quisque convallis velit
-                                                        eget
-                                                        magna luctus elementum.</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="row ultimos-comentarios-estructure">
-                                                <div class="col-md-12">
-                                                    <div class="comments-structure">
-                                                        <div class="comments-main">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12 text-center">
-                                                    <p><a href="#"
-                                                          class="btn btn-danger btn-md font-roboto mt-lg mb-lg"><strong>Participe
-                                                                do debate!</strong></a></p>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="tutorial-debate divider-top">
                                             <div class="row mt-md">
                                                 <div class="col-md-12">
@@ -339,91 +311,7 @@
     <div class="back-to-top">
         <a href="#" class="white"><i class="fa fa-level-up"></i> Voltar para o topo</a>
     </div>
-<script type="text/javascript">
-    jQuery(function($) {
-        var CommentTpl = {
-
-            urlText : '/marcocivil/texto-em-debate/texto-em-debate/',
-            postId  : 413,
-
-            load : function(){
-                var wnonce = '<?php echo wp_create_nonce('side_comments_last_comments_nonce');?>';
-                return $.post('wp-admin/admin-ajax.php',{
-                    'action':'last_comments_callback',
-                    'last_comments_nonce': wnonce,
-                    'post_id': CommentTpl.postId
-                },function(objeto){
-                    if(objeto.success){
-                        var divColumn = $('<div />');
-                        if(objeto.data.length >= 3){
-                            columnQuant = "three-col";
-                        }else if (objeto.data.length == 2){
-                            columnQuant = "two-col";
-                        }else{
-                            columnQuant = "one-col";
-                        }
-                        divColumn.addClass(columnQuant);
-
-                        $.each(objeto.data, function(index, section){
-                            prevColumn = $('.'+ columnQuant+' .comments-col:eq(' + index + '):visible');
-                            existsSection = prevColumn.find(' .comments-header a').html() == section.section_text;
-                            if(existsSection && section.comments.length){
-                                $.each(section.comments, function(index, prevComment){
-                                    if($(prevColumn).find('.comment-comment:eq('+index+') a:visible').html() != prevComment.comment_text){
-                                        prevColumn.find('.list-group-item').hide(1000);
-                                    }
-                                });
-                            }else{
-                                prevColumn.remove();
-                            }
-                            divColumn.append(CommentTpl.renderSection(section));
-                        });
-                        $('.comments-main').html(divColumn);
-                    }
-                }, 'json');
-            },
-
-            renderComment : function( comment, sectionId ){
-                return $('<li />').addClass('list-group-item').append(
-                    $('<div />').addClass('comments-line')
-                        .append($('<div />').addClass('comments-text')
-                            .append($('<div />').addClass('comment-content')
-                                .append($('<div />').addClass('comment-comment')
-                                    .append($('<p />').append($('<a />').attr('href', CommentTpl.urlText+'#commentable-section-'+sectionId).html(comment.comment_text))))
-                                .append($('<div />').addClass('comments-mic-info').append($('<p />')
-                                    .append($('<small />')
-                                        .append(comment.author)
-                                        .append($('<span />').addClass('ml-md')
-                                            .append($('<i />').addClass('fa fa-clock-o'))).append(' ' + comment.date))))))
-                ).clone();
-            },
-
-            renderSection : function( section ){
-                var commentSection = $('<div />').addClass('comments-col');
-                commentSection.append(
-                    $('<div />').addClass('comments-header')
-                        .append($('<p />').addClass('red')
-                            .append($('<strong />')
-                                .append($('<a />').attr('href', CommentTpl.urlText+'#commentable-section-'+section.section_id).html(section.section_text))))
-                );
-                var listGroup = $('<div />').addClass('list-group');
-                if(section.comments.length){
-                    $.each(section.comments, function( index, comment ) {
-                        listGroup.append(CommentTpl.renderComment(comment, section.section_id));
-                    });
-                }
-                commentSection.append(listGroup);
-                return commentSection;
-            }
-        };
-
-        CommentTpl.load();
-
-        var timeoutID = setInterval(CommentTpl.load, 4000);
-
-    });
 </script>
-
 <?php get_template_part('front', 'noticias'); ?>
 <?php get_template_part('mini-tutorial'); ?>
 <?php get_footer(); ?>
