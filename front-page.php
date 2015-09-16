@@ -228,7 +228,7 @@
                                         </div>
                                         <?php if ( is_active_sidebar( 'texto-ultimos-comentarios' ) ) dynamic_sidebar( 'texto-ultimos-comentarios' ); ?>
 
-                                        <div class="tutorial-debate divider-top">
+                                        <div class="container-fluid tutorial-debate divider-top">
                                             <div class="row mt-md">
                                                 <div class="col-md-12">
                                                     <h1 class="red font-roboto">Como comentar no texto:</h1>

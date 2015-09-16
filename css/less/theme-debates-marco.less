@@ -700,8 +700,8 @@ div.mce-panel {
       .fase-um-numeros-content {
         background-color: #0e6490;
         color: #fff;
-        .dados{
-          background-color:#0f6e9f;
+        .dados {
+          background-color: #0f6e9f;
         }
 
       }
@@ -725,15 +725,30 @@ div.mce-panel {
         }
         li.list-group-item {
           border-radius: 0;
-          border: solid #dddddd;
+          border: solid #f2f2f2;
           border-width: 1px 0 0 0;
-          padding: 10px;
+          padding: 10px 0;
+          margin: 10px 0;
           &:first-child {
             border-top: none;
           }
         }
-        .comments-line {
-          margin: 0 -15px 0 -15px;
+        .comments-header {
+          height: 85px;
+          overflow: hidden;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, #ffffff 80%);
+          }
+        }
+        .comments-col {
+          //margin: 0 -15px 0 -15px;
           .clearfix();
           .comments-image {
             float: left;
@@ -749,23 +764,29 @@ div.mce-panel {
           }
           .comments-text {
             font-size: 12px;
-            float: left;
-            width: 90%;
-            padding: 0 15px 15px 15px;
+            //padding: 0 15px 15px 15px;
             position: relative;
           }
           .comments-mic-info {
             color: #666666;
             font-size: 11px;
-            position: absolute;
-            bottom: 0;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 26%);
-            padding-top: 15px;
-            width: 100%;
+            margin-top: 10px;
           }
           .comment-comment {
             height: 80px;
             overflow: hidden;
+            p {
+              &:after {
+                content: "";
+                position: absolute;
+                bottom: 25px;
+                left: 0;
+                right: 0;
+                height: 15px;
+                width: 100%;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #ffffff 100%);
+              }
+            }
           }
         }
         .comments-main {
@@ -774,17 +795,15 @@ div.mce-panel {
             min-height: 300px;
           }
           margin: 20px -15px 0 -15px;
-          .comments-header {
-            padding: 15px 0;
-          }
+
           .one-col {
             padding: 0 15px;
             .comments-image {
             }
             .comments-text {
-              width: 90%;
+
               @media (max-width: @screen-md) {
-                width: 75%;
+
               }
             }
           }
@@ -793,13 +812,13 @@ div.mce-panel {
             .comments-image {
             }
             .comments-text {
-              width: 80%;
+
             }
             .comments-col {
               float: left;
               width: 50%;
               padding: 0 15px;
-              border-left: 1px solid #ccc;
+              border-left: 1px solid #f2f2f2;
               &:first-child {
                 border-left: 0;
               }
@@ -807,7 +826,7 @@ div.mce-panel {
                 float: none;
                 width: 100%;
                 border-left: none;
-                border-top: 2px solid #ccc;
+                border-top: 2px solid #f2f2f2;
                 padding-top: 20px;
                 margin-top: 20px;
                 &:first-child {
@@ -821,13 +840,13 @@ div.mce-panel {
             .comments-image {
             }
             .comments-text {
-              width: 75%;
+
             }
             .comments-col {
               float: left;
               width: 33.3333%;
               padding: 0 15px;
-              border-left: 1px solid #ccc;
+              border-left: 1px solid #f2f2f2;
               &:first-child {
                 border-left: 0;
               }
@@ -835,7 +854,7 @@ div.mce-panel {
                 float: none;
                 width: 100%;
                 border-left: none;
-                border-top: 2px solid #ccc;
+                border-top: 2px solid #f2f2f2;
                 padding-top: 20px;
                 margin-top: 20px;
                 &:first-child {
