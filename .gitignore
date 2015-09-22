@@ -12,4 +12,7 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 .idea
+
 css/*.css
+css/*.css.map
+

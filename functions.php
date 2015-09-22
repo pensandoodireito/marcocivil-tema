@@ -15,6 +15,14 @@ function autor_exibicao_metabox()
     add_meta_box( 'autor-exibicao-id', 'Autor de exibição', 'autor_exibicao_render', 'pauta', 'normal', 'high' );
 }
 
+$args = array(
+    'name'          => __( 'Comentários do texto', 'theme_text_domain' ),
+    'id'            => 'texto-ultimos-comentarios',
+    'before_widget' => '<div class="ultimos-comentarios divider-top mt-md">',
+    'after_widget'  => '</div>');
+
+register_sidebar($args);
+
 function autor_exibicao_render($post)
 {
     $autor_exibicao = get_post_meta($post->ID, '_autor_exibicao', true);
