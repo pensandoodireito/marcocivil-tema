@@ -3,53 +3,66 @@
     margin-bottom: 18px;
     padding-bottom: 18px;
 }
+
 #delibera #content header h1 {
     font-size: 24px;
     line-height: 1.5;
 }
+
 #delibera .filters p:first-child {
     border-bottom: 1px solid #ededed;
     margin-bottom: 18px;
     padding-bottom: 18px;
 }
+
 #delibera .filters ul {
     border-bottom: 1px solid #ededed;
     margin-bottom: 10px;
     padding-bottom: 9px;
 }
+
 #delibera .filters li {
     padding: 3px 0;
 }
+
 #delibera .filters ul.dates li {
     margin-bottom: 9px;
 }
+
 #delibera .filters ul.dates li:last-child {
     margin-bottom: 0;
 }
+
 #delibera .filters ul.status li {
     display: inline-block;
 }
+
 #delibera .filters ul.status li > span {
     background-color: #ccc;
     border-radius: 4px;
     display: inline-block;
     padding: 6px 9px;
 }
+
 #delibera .filters ul.status li > span:hover {
     background-color: #bbb;
     cursor: pointer;
 }
+
 #delibera .filters ul.status li > span.selected {
     background-color: #21759b;
     color: #fff;
 }
+
 #delibera .filters label.date {
     display: block;
     font-size: 11px;
 }
+
 #delibera .site-content {
     width: 70.104167%;
 }
+
 #delibera .topic {
     border: 1px solid #ededed;
     border-radius: 4px;
@@ -57,16 +70,20 @@
     line-height: 1.5;
     padding: 18px;
 }
+
 #delibera .topic:hover {
     background: #f9f9f9;
 }
+
 #delibera .topic h1 {
     font-size: 21px;
     line-height: 1.25;
 }
+
 #delibera .topic a {
     text-decoration: none;
 }
+
 #delibera .topic .status {
     background: #ccc;
     border-radius: 4px;
@@ -77,6 +94,7 @@
     padding: 5px 9px 3px 9px;
     text-transform: uppercase;
 }
+
 #delibera .topic .deadline {
     background: #21759b;
     border-radius: 4px;
@@ -88,9 +106,11 @@
     padding: 5px 9px 3px 9px;
     text-transform: uppercase;
 }
+
 #delibera .topic .actions > div {
     margin-top: 20px;
 }
+
 #delibera .topic .number-of-comments {
     background-color: #ddd;
     border-radius: 4px;
@@ -105,36 +125,44 @@
     text-decoration: none;
     vertical-align: middle;
 }
+
 #delibera .topic .meta-tags li {
     display: inline-block;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 #delibera .topic .meta-tags li a {
     font-weight: normal;
     text-transform: none;
 }
+
 .single #delibera .topic {
     border: none;
     font-size: 14px;
     line-height: 1.5;
     padding: 18px 0;
 }
+
 .single #delibera .topic:hover {
     background: transparent;
 }
+
 .single #delibera .topic h1 {
     font-size: 27px;
     line-height: 1.25;
 }
+
 .single #delibera .topic h2, #delibera h3#reply-title {
     font-size: 18px;
     line-height: 1.25;
 }
+
 .single #delibera .topic a {
     text-decoration: none;
 }
+
 .single #delibera .topic .status {
     background: #ccc;
     border-radius: 4px;
@@ -145,6 +173,7 @@
     padding: 5px 9px 3px 9px;
     text-transform: uppercase;
 }
+
 .single #delibera .topic .deadline {
     background: #21759b;
     border-radius: 4px;
@@ -156,20 +185,24 @@
     padding: 5px 9px 3px 9px;
     text-transform: uppercase;
 }
+
 .single #delibera .meta-social {
     border-bottom: 1px solid #ededed;
     border-top: 1px solid #ededed;
     margin: 18px 0;
     padding: 12px 0;
 }
+
 .single #delibera .topic > .actions {
     border-top: 1px solid #ededed;
     margin-top: 18px;
     padding-top: 18px;
 }
+
 .single #delibera .votes {
     margin-top: 18px;
 }
+
 .single #delibera .votes ul li {
     display: block;
     float: left;
@@ -177,98 +210,111 @@
     margin: 0 3px 3px 0;
     padding: 0;
 }
+
 /* ----------- inicia comentarios --------- */
 
-
-    .comments-area #comments header {
-        padding: 0;
-    }
-    #comments .comment-reply-title {
-        font-size: 18px;
-        font-weight: 700;
-        margin: 10px 0;
-    }
-    #comments #cancel-comment-reply-link {
-        font-weight: 700;
-        color: #bc3f38;
-        margin-left: 40px;
-    }
-    #comments #comment {
-        display: block;
-        width: 100%;
-    }
-    #comments .comment-respond {
-        margin: 10px 30px;
-    }
-    #comments .comments-title {
-        font-size: 18px;
-        font-weight: 700;
-    }
-    #comments li.comment {
-        background: #ededed;
-        margin: 10px 0;
-        padding: 10px;
-        border: 1px solid #D3D3D3;
-        list-style-type: none;
-    }
-    #comments .comment-form-comment label {
-        margin-right: 20px;
-    }
-    #comments .form-submit {
-        text-align: left;
-    }
-    #comments .comment-content {
-        background-color: #fff;
-        padding: 10px;
-        margin: 5px 0 10px 0;
-    }
-
-/* dentro da listagem */
-    #comments .commentlist .comment-respond {
-        margin: 10px 50px;
-        padding-top: 10px;
-        border-top: 1px solid #ccc;
-    }
-
-    #comments ol.commentlist {
-        padding: 10px;
-    }
-
-/* fora da listagem */
-#comments .comment-respond{
-    border-top:1px solid #ccc;
-    margin:20px 50px;
-    padding-top:20px;
+.comments-area #comments header {
+    padding: 0;
 }
 
+#comments .comment-reply-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+}
 
+#comments #cancel-comment-reply-link {
+    font-weight: 700;
+    color: #bc3f38;
+    margin-left: 40px;
+}
 
+#comments #comment {
+    display: block;
+    width: 100%;
+}
+
+#comments .comment-respond {
+    margin: 10px 30px;
+}
+
+#comments .comments-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#comments li.comment {
+    background: #ededed;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #D3D3D3;
+    list-style-type: none;
+}
+
+#comments .comment-form-comment label {
+    margin-right: 20px;
+}
+
+#comments .form-submit {
+    text-align: left;
+}
+
+#comments .comment-content {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+}
+
+/* dentro da listagem */
+#comments .commentlist .comment-respond {
+    margin: 10px 50px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#comments ol.commentlist {
+    padding: 10px;
+}
+
+/* fora da listagem */
+#comments .comment-respond {
+    border-top: 1px solid #ccc;
+    margin: 20px 50px;
+    padding-top: 20px;
+}
 
 #comments li.comment.encaminhamento {
     background: #d9edf7;
 }
+
 #comments .comment article {
     padding: 9px;
 }
+
 #comments article header {
     border-bottom: 1px solid #ccc !important;
 }
+
 #comments article header .alignleft {
     width: 80%;
 }
+
 #delibera #comments article header .alignright {
     width: 20%;
 }
+
 #delibera #comments article header .type {
     display: inline-block;
     font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 #delibera #comments article .delibera-checkbox {
     margin-right: 10px;
     width: 20px;
 }
+
 /* ----------- finaliza comentarios --------- */
 
 #delibera #encaminhamentos h2 {
@@ -277,22 +323,26 @@
     font-weight: normal;
     line-height: 1.25;
 }
+
 #delibera #encaminhamentos ol li {
     background: #d9edf7;
     margin: 1.714285714rem 0;
     padding: 0 9px;
 }
+
 #delibera #encaminhamentos ol li.submit, #delibera ol.encaminhamentos li.submit p {
     background: none;
     padding: 0;
     text-align: center;
 }
+
 #delibera #encaminhamentos ol li .checkbox {
     float: left;
     margin-right: 10px;
     text-align: center;
     width: 5%;
 }
+
 #delibera #encaminhamentos ol li .votos {
     float: left;
     margin-right: 10px;
@@ -300,6 +350,7 @@
     text-align: center;
     width: 10%;
 }
+
 #delibera #encaminhamentos ol li .votos span {
     background-color: #21759b;
     border-radius: 4px;
@@ -307,19 +358,23 @@
     font-weight: bold;
     padding: 3px 6px;
 }
+
 #delibera #encaminhamentos ol li .content {
     float: left;
     margin-bottom: 0;
     padding-bottom: 0;
     width: 85%;
 }
+
 #delibera #encaminhamentos ol li .content p:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
 #respond form .comment-form-type label {
     display: inline-block;
 }
+
 #delibera #new-encaminhamento {
     background: #fff;
     bottom: 0;
@@ -332,29 +387,36 @@
     z-index: 10;
     margin-bottom: 0px;
 }
+
 #delibera #new-encaminhamento textarea {
     height: 180px;
     margin-bottom: 9px;
     width: 98.6%;
 }
+
 #delibera #new-encaminhamento #respond {
     margin-top: 0px;
 }
+
 #delibera #new-encaminhamento #delibera_commentform {
     margin-top: 0px;
 }
+
 #delibera #new-encaminhamento #reply-title {
     margin-bottom: 0px;
 }
+
 #delibera .new-encaminhamento #reply-title {
     text-align: left;
     font-size: 18px;
     line-height: 1.25;
     font-weight: normal;
 }
+
 form.delibera-edit-comment-form textarea {
     width: 98.5%;
 }
+
 .navigation a {
     color: #aaa;
     font-size: 16px;
@@ -362,27 +424,33 @@ form.delibera-edit-comment-form textarea {
     line-height: 1;
     text-decoration: none;
 }
+
 .navigation a:hover {
     color: #777;
 }
+
 .navigation li span.current {
     color: #21759b;
     font-weight: bold;
     font-size: 16px;
 }
+
 .navigation ol {
     text-align: center;
     width: 100%;
 }
+
 .navigation ol li {
     border-right: 1px solid #aaa;
     display: inline-block;
     margin-right: 6px;
     padding-right: 8px;
 }
+
 .navigation ol li:last-child {
     border-right: none;
 }
+
 div.delibera-edit-comment-button, div.delibera-delete-comment-button {
     color: #999;
     cursor: pointer;
@@ -391,15 +459,19 @@ div.delibera-edit-comment-button, div.delibera-delete-comment-button {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 div.delibera-edit-comment-button {
     margin-right: 12px;
 }
+
 div.delibera-edit-comment-button:hover, div.delibera-delete-comment-button:hover {
     color: #21759b;
 }
+
 .delibera-slide:hover {
     cursor: pointer;
 }
+
 /* = Clearfix
 ================================================ 
 .clearfix:after, .container:after {
@@ -418,43 +490,55 @@ div.delibera-edit-comment-button:hover, div.delibera-delete-comment-button:hover
 .clear {
     clear: both;
 }
+
 .box {
     padding: 10px;
 }
+
 .alignleft {
     float: left;
 }
+
 .alignright {
     float: right;
 }
+
 .textcenter, #delibera h3#reply-title {
     text-align: center;
 }
+
 .textright {
     text-align: right;
 }
+
 .bottom {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
+
 .left {
     margin-left: 0 !important;
     padding-left: 0 !important;
 }
+
 .right {
     margin-right: 0 !important;
     padding-right: 0 !important;
 }
+
 .top {
     margin-top: 0 !important;
     padding-top: 0 !important;
 }
+
 .nobullets {
     list-style: none;
 }
+
 .hidden {
     display: none;
 }
+
 .btn-facebook, .btn-facebook:hover {
     background-color: rgb(60, 91, 156) !important;
     background-image: linear-gradient(rgb(69, 104, 178), rgb(48, 72, 123)) !important;
@@ -465,6 +549,7 @@ div.delibera-edit-comment-button:hover, div.delibera-delete-comment-button:hover
     color: #fff !important;
     text-shadow: none !important;
 }
+
 .btn-twitter, .btn-twitter:hover {
     background-color: rgb(11, 184, 231) !important;
     background-image: linear-gradient(rgb(18, 204, 255), rgb(0, 154, 196)) !important;
@@ -475,6 +560,7 @@ div.delibera-edit-comment-button:hover, div.delibera-delete-comment-button:hover
     color: #fff !important;
     text-shadow: none !important;
 }
+
 .btn-google-plus, .btn-google-plus:hover {
     background-color: rgb(209, 72, 54) !important;
     background-image: linear-gradient(rgb(209, 72, 54), rgb(178, 54, 45)) !important;
@@ -485,58 +571,73 @@ div.delibera-edit-comment-button:hover, div.delibera-delete-comment-button:hover
     color: #fff !important;
     text-shadow: none !important;
 }
+
 .delibera_like {
     margin-right: 4px;
 }
+
 #botao-oculto {
     display: none !important;
 }
+
 .delibera-like-count, .delibera-unlike-count {
     display: inline-block;
     font-size: 11px;
     font-weight: bold;
     /*    text-transform:uppercase;*/
 }
+
 .delibera-unlike-count {
     margin-left: 18px;
 }
+
 .delibera-edit-comment-form .checkbox-encaminhamento {
     float: left;
 }
+
 .delibera-edit-comment-form #delibera-publishing-action {
     float: right;
 }
+
 .delibera_before_fields .form-submit {
     text-align: right;
 }
+
 .encaminhamentos .encaminhamentos-selecionados {
     margin: 0 0 3px 0 !important;
-    padding: 9px 6px 6px 6px!important;
+    padding: 9px 6px 6px 6px !important;
 }
+
 #nova-pauta-form .alignleft {
     margin-right: 5%;
     width: 65%;
 }
+
 #nova-pauta-form .alignright {
     width: 30%;
 }
+
 #nova-pauta-form .wp-editor-tools {
     margin-bottom: 0;
 }
+
 #nova-pauta-form .divider {
     border-bottom: 1px solid #eee;
     height: 0;
     margin: 18px 0;
     padding: 0;
 }
+
 #nova-pauta-form label {
     display: inline-block;
     font-weight: bold;
     margin-bottom: 9px;
 }
+
 #nova-pauta-form label.checkbox {
     font-weight: normal;
 }
+
 #nova-pauta-form input[type="text"] {
     font-size: 16px;
     margin: 3px 0;
@@ -544,6 +645,7 @@ div.delibera-edit-comment-button:hover, div.delibera-delete-comment-button:hover
     padding: 3px 0;
     width: 100%;
 }
+
 #nova-pauta-form textarea#nova-pauta-resumo {
     height: 120px;
     margin: 0;
@@ -551,9 +653,11 @@ div.delibera-edit-comment-button:hover, div.delibera-delete-comment-button:hover
     padding: 0;
     width: 100%;
 }
+
 #delibera.situacao-relatoria {
     margin-bottom: 180px;
 }
+
 div.error {
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -564,10 +668,12 @@ div.error {
     background-color: #ffebe8;
     border-color: #c00;
 }
+
 div.error p {
     margin: 0.5em 0;
     padding: 2px;
 }
+
 #stick-sidebar {
     padding: 20px;
     background: #e6e6e6;
@@ -577,7 +683,10 @@ div.error p {
 }
 
 /* editor de texto (nova pauta, tano para visual quanto para texto)*/
-.wp-editor-container textarea.wp-editor-area{
+.wp-editor-container textarea.wp-editor-area {
     border: 1px solid #ccc;
 }
-#nova-pauta-conteudo_ifr {border: 1px solid #ccc;}
+
+#nova-pauta-conteudo_ifr {
+    border: 1px solid #ccc;
+}

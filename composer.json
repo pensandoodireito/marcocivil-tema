@@ -1,21 +1,26 @@
 {
-    "name": "pensandoodireito/marcocivil-tema",
-    "version": "0.0.1",
-    "type": "wordpress-theme",
-    "description": "Tema para consulta do Marco Civil",
-    "keywords": ["theme", "wordpress", "democracy", "participação"],
-    "homepage": "https://github.com/pensandoodireito/marcocivil-tema",
-    "license": "GPL-3",
-    "authors": [
-        {
-            "name": "Marco Antonio Konopacki",
-            "email": "marco.konopacki@mj.gov.br",
-            "homepage": "http://participacao.mj.gov.br/",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "composer/installers": "~1.0",
-        "johnpbloch/wordpress": ">=3.8"
+  "name": "pensandoodireito/marcocivil-tema",
+  "version": "0.0.1",
+  "type": "wordpress-theme",
+  "description": "Tema para consulta do Marco Civil",
+  "keywords": [
+    "theme",
+    "wordpress",
+    "democracy",
+    "participação"
+  ],
+  "homepage": "https://github.com/pensandoodireito/marcocivil-tema",
+  "license": "GPL-3",
+  "authors": [
+    {
+      "name": "Marco Antonio Konopacki",
+      "email": "marco.konopacki@mj.gov.br",
+      "homepage": "http://participacao.mj.gov.br/",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "composer/installers": "~1.0",
+    "johnpbloch/wordpress": ">=3.8"
+  }
 }
