@@ -226,7 +226,7 @@
                                                         alt=""></a>
                                             </div>
                                         </div>
-                                        <?php if ( is_active_sidebar( 'texto-ultimos-comentarios' ) ) dynamic_sidebar( 'texto-ultimos-comentarios' ); ?>
+                                        <?php if ( is_active_sidebar( 'texto-ultimos-comentarios' ) ) {dynamic_sidebar( 'texto-ultimos-comentarios' );} ?>
 
                                         <div class="tutorial-debate divider-top">
                                             <div class="row mt-md">
