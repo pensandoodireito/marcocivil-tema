@@ -65,7 +65,7 @@
                                                     </div>
                                                     <div class="menu-participar">
                                                         <ul class="list-unstyled">
-                                                            <li><a target="_blank" href="/marcocivil/o-que-e">Entenda o
+                                                            <li><a target="_blank" href="/marcocivil/">Entenda o
                                                                     Marco Civil da Internet</a></li>
                                                             <li><a target="_blank" href="/marcocivil/pauta">Histórico
                                                                     online</a></li>
@@ -106,7 +106,8 @@
                                                         como foi a fase anterior ao processo de regulamentação.</p>
 
                                                     <p>
-                                                        <a href="#" class="btn btn-default font-roboto mt-md"><strong>Confira!</strong></a>
+                                                        <a href="/marcocivil/debate-em-numeros/"
+                                                           class="btn btn-default font-roboto mt-md"><strong>Confira!</strong></a>
                                                     </p>
                                                 </div>
                                                 <div class="col-md-5 col-md-offset-1 dados">
@@ -197,6 +198,29 @@
                             <!-- fase 2 -->
                             <div role="tab-fases" class="tab-pane active" id="fase-dois">
                                 <div class="fase-dois-content">
+                                    <div class="top-mcsegundafase">
+                                        <div class="row">
+                                            <div class="col-md-4 text-center">
+                                                <img
+                                                    src="<?php echo get_stylesheet_directory_uri(); ?>/images/marcocivil-w.png"
+                                                    class="img-adptive"
+                                                    alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="white mt-md">
+                                                    <h1 class="font-amatic h3">Marco Civil 2ª fase: o que é?</h1>
+                                                    <p class="mt-md">O Marco Civil da Internet, Lei 12.965/14,
+                                                        estabelece princípios, garantias, direitos e deveres dos
+                                                        usuários da Internet no Brasil, sendo a primeira lei construída
+                                                        de forma colaborativa entre Governo e sociedade utilizando a
+                                                        internet como plataforma de debate.</p>
+                                                    <p><a href="/marcocivil/texto-em-debate/texto-em-debate/"
+                                                          class="btn btn-danger btn-lg font-roboto mt-md"><strong>Participe
+                                                                do debate!</strong></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="container-fluid pt-md pb-lg">
                                         <div class="row">
                                             <div class="col-md-5">
@@ -214,8 +238,9 @@
                                                         utilizando a
                                                         internet como plataforma de debate.</p>
 
-                                                    <p><a href="/marcocivil/texto-em-debate/texto-em-debate/"
-                                                          class="btn btn-danger btn-lg font-roboto mt-md"><strong>Participe
+                                                    <p class="mt-md"><a
+                                                            href="/marcocivil/texto-em-debate/texto-em-debate/"
+                                                            class="btn btn-danger btn-lg font-roboto mt-md"><strong>Participe
                                                                 do debate!</strong></a></p>
                                                 </div>
                                             </div>
@@ -224,9 +249,28 @@
                                                         src="<?php echo get_stylesheet_directory_uri(); ?>/images/debate-texto-001.png"
                                                         class="img-adptive"
                                                         alt=""></a>
+                                                <p class="text-center mt-lg">
+                                                    Realização:
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-sm-offset-3">
+                                                        <img
+                                                            src="<?php echo get_stylesheet_directory_uri(); ?>/images/mj.png"
+                                                            class="img-adptive"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <img
+                                                            src="<?php echo get_stylesheet_directory_uri(); ?>/images/sal.png"
+                                                            class="img-adptive"
+                                                            alt="">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <?php if ( is_active_sidebar( 'texto-ultimos-comentarios' ) ) {dynamic_sidebar( 'texto-ultimos-comentarios' );} ?>
+                                        <?php if (is_active_sidebar('texto-ultimos-comentarios')) {
+                                            dynamic_sidebar('texto-ultimos-comentarios');
+                                        } ?>
 
                                         <div class="tutorial-debate divider-top">
                                             <div class="row mt-md">
@@ -311,7 +355,6 @@
     <div class="back-to-top">
         <a href="#" class="white"><i class="fa fa-level-up"></i> Voltar para o topo</a>
     </div>
-</script>
-<?php get_template_part('front', 'noticias'); ?>
+    </script>
 <?php get_template_part('mini-tutorial'); ?>
 <?php get_footer(); ?>
