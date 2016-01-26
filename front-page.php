@@ -207,7 +207,7 @@
 											<div class="col-md-8">
 												<div class="white mt-md">
 													<h1 class="font-amatic h3">Marco Civil 2ª fase: o que é?</h1>
-													<p class="mt-md">Em 2015, a Secretaria de Assuntos legislativos do
+													<p class="mt-md">Em 2015, a Secretaria de Assuntos Legislativos do
 														Ministério da Justiça lançou o debate público de regulamentação
 														do Marco Civil da Internet. A proposta de texto da segunda fase
 														é resultado das contribuições feitas pelos participantes na
