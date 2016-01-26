@@ -196,6 +196,7 @@
                                 </div>
                             </div>
                             <!-- fase 2 -->
+                            <?php $permalink = get_texto_em_debate_permalink()?: '#'; ?>
                             <div role="tab-fases" class="tab-pane active" id="fase-dois">
                                 <div class="fase-dois-content">
                                     <div class="top-mcsegundafase">
@@ -214,9 +215,12 @@
                                                         usuários da Internet no Brasil, sendo a primeira lei construída
                                                         de forma colaborativa entre Governo e sociedade utilizando a
                                                         internet como plataforma de debate.</p>
-                                                    <p><a href="/marcocivil/texto-em-debate/texto-em-debate/"
-                                                          class="btn btn-danger btn-lg font-roboto mt-md"><strong>Participe
-                                                                do debate!</strong></a></p>
+                                                    <p>
+                                                        <a href="<?php echo $permalink; ?>"
+                                                           class="btn btn-danger btn-lg font-roboto mt-md">
+                                                            <strong>Participe do debate!</strong>
+                                                        </a>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -239,7 +243,7 @@
                                                         internet como plataforma de debate.</p>
 
                                                     <p class="mt-md"><a
-                                                            href="/marcocivil/texto-em-debate/texto-em-debate/"
+                                                            href="<?php echo $permalink; ?>"
                                                             class="btn btn-danger btn-lg font-roboto mt-md"><strong>Participe
                                                                 do debate!</strong></a></p>
                                                 </div>
