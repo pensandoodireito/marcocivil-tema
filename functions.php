@@ -141,3 +141,21 @@ function marcocivil_anotacoes_sistematizacao() {
 		<?php
 	}
 }
+
+function get_texto_em_debate_permalink() {
+	$permalink = null;
+	$post_type = 'texto-em-debate';
+	if ( post_type_exists( $post_type ) ) {
+		$args  = array(
+			'post_type'      => $post_type,
+			'posts_per_page' => 1,
+		);
+		$query = new WP_Query( $args );
+		if ( $query->have_posts() ) {
+			$query->the_post();
+			$permalink = get_permalink();
+		}
+	}
+
+	return $permalink;
+}
