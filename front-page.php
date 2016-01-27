@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row mt-md">
 			<div class="col-md-12">
-				<h1 class="font-roboto red">Marco civil da internet</h1>
+				<h1 class="font-roboto red">Marco Civil da Internet</h1>
 			</div>
 		</div>
 	</div>
