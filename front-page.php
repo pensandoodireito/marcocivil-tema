@@ -231,11 +231,10 @@
 													<h1 class="font-roboto red pt-lg">Chegou a hora de debater o
 														texto</h1>
 
-													<p class="mt-md">A minuta de decreto está dividida em 4 capítulos e
-														possui 20 artigos. Os interessados poderão fazer contribuições e
-														sugerir alterações de redação ou de conteúdo. Além disso, o
-														participante poderá concordar ou discordar das contribuições de
-														outros participantes.</p>
+													<p class="mt-md">A minuta de decreto está dividida em 4 capítulos e possui 20 artigos. 
+													Os interessados poderão fazer contribuições e sugerir alterações de redação ou de conteúdo, 
+													até o dia 29 de fevereiro. Além disso, o participante poderá concordar ou discordar das 
+													contribuições de outros participantes.</p>
 
 													<p class="mt-md"><a
 															href="<?php echo $permalink; ?>"
