@@ -217,7 +217,7 @@
 													<p>
 														<a href="<?php echo $permalink; ?>"
 														   class="btn btn-danger btn-lg font-roboto mt-md">
-															<strong>Participe do debate!</strong>
+															<strong>Veja como foi debate!</strong>
 														</a>
 													</p>
 												</div>
@@ -238,8 +238,8 @@
 
 													<p class="mt-md"><a
 															href="<?php echo $permalink; ?>"
-															class="btn btn-danger btn-lg font-roboto mt-md"><strong>Participe
-																do debate!</strong></a></p>
+															class="btn btn-danger btn-lg font-roboto mt-md"><strong>Veja como foi o
+																 debate!</strong></a></p>
 												</div>
 											</div>
 											<div class="col-md-7 text-center">
