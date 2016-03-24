@@ -217,7 +217,7 @@
 													<p>
 														<a href="<?php echo $permalink; ?>"
 														   class="btn btn-danger btn-lg font-roboto mt-md">
-															<strong>Veja como foi debate!</strong>
+															<strong>Veja como foi o debate!</strong>
 														</a>
 													</p>
 												</div>
